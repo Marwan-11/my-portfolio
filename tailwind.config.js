@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         'my-black': '#191923',
-        'box-gray': '#343a40',
+        'box-gray': '#191923',
       },
       gridTemplateColumns: {
         // Simple 16 column grid

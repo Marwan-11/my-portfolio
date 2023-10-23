@@ -48,7 +48,7 @@ const Recommendations = () => {
           <h4 className=" text-white text-4xl">Recommendations</h4>
         </div>
       </div>
-      <div className=" w-full overflow-hidden flex items-center justify-center h-full  flex-row  gap-10  relative py-16 mx-auto my-0">
+      <div className=" w-full  flex items-center justify-center h-full  flex-col  gap-10  relative py-16 mx-auto my-0">
         {services.map((item) => {
           return (
             <div className=" bg-box-gray  px-8 py-8 rounded-2xl relative min-w-full min-h-full  ">
