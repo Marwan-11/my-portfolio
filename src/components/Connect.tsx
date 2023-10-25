@@ -12,10 +12,10 @@ const Connect = () => {
 
       <div className=" flex flex-col bg-box-gray overflow-hidden px-14 py-14 rounded-2xl ">
         <div className=" flex h-28 ">
-          <div className=" text-4xl my-8 flex-1 text-gray-300 bg-zinc-800 w-24">
+          <div className=" text-4xl my-8 text-gray-300 bg-zinc-800 w-24">
             <BsFillPersonFill />
           </div>
-          <div className=" my-8 flex-3 w-full">
+          <div className=" my-8 flex-1">
             <input
               type="text"
               className=" px-3 w-full h-9 placeholder:Name bg-gray-600 text-white text-lg "

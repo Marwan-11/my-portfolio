@@ -11,26 +11,28 @@ const LinksSidebar = () => {
   };
 
   return (
-    <aside className="h-full">
-      <div className="">
-        <button
-          onClick={toggleSidebar}
-          className={`${
-            isOpen ? 'right-48 top-4' : 'top-4 right-10'
-          } duration-700 p-1.5  text-gray-600 text-4xl hover:text-white fixed  z-10`}
-        >
-          {isOpen ? <AiOutlineClose /> : <VscThreeBars />}
-        </button>
-      </div>
+    <aside className="h-full bg-box-gray">
+      <button
+        onClick={toggleSidebar}
+        className={`${
+          isOpen ? 'right-48 top-4' : 'top-4 right-10'
+        } duration-700 p-1.5   absolute  z-10`}
+      >
+        {isOpen ? (
+          <AiOutlineClose className="text-gray-600 text-4xl hover:text-white" />
+        ) : (
+          <VscThreeBars className="text-gray-600 text-4xl hover:text-white" />
+        )}
+      </button>
 
       <div
         className={`fixed right-0 top-0 ${
           isOpen ? 'w-64' : 'w-32'
-        } h-full bg-my-black shadow-sm duration-500 transition-all`}
+        } h-full bg-box-gray shadow-sm duration-700`}
       >
-        <nav className=" h-full flex flex-col bg-my-black border-r shadow-sm ">
+        <nav className=" h-full flex flex-col bg-box-gray border-r shadow-sm ">
           {isOpen && (
-            <div>
+            <div className=" duration-700 bg-box-gray">
               <div className="border-b-2 border-gray-600 mt-32">
                 <ul className=" px-3">
                   <li className=" text-gray-600 text-2xl my-5 mx-4 hover:text-white">

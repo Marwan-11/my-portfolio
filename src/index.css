@@ -16,3 +16,16 @@ body {
 body {
   @apply bg-black px-8 py-4;
 }
+
+body::-webkit-scrollbar {
+  width: 20px;
+}
+body::-webkit-scrollbar-track {
+  @apply bg-black border-none;
+}
+body::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 border-none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
