@@ -1,6 +1,5 @@
 import { AiFillStar } from 'react-icons/ai';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-// import {Swiper , SwiperSlide} FROM 'Swiper/react'
 
 const Recommendations = () => {
   const services = [
@@ -48,10 +47,10 @@ const Recommendations = () => {
           <h4 className=" text-white text-4xl">Recommendations</h4>
         </div>
       </div>
-      <div className=" w-full  flex items-center justify-center h-full  flex-col  gap-10  relative py-16 mx-auto my-0">
+      <div className=" grid gap-10 grid-cols-auto py-9">
         {services.map((item) => {
           return (
-            <div className=" bg-box-gray  px-8 py-8 rounded-2xl relative min-w-full min-h-full  ">
+            <div className=" bg-box-gray  px-8 py-8 rounded-2xl relative min-h-full min-w-full  ">
               <div className=" my-5 mx-7">
                 <h5 className=" font-semibold text-2xl text-white">
                   {item.title}

@@ -40,13 +40,13 @@ const InfoSidebar = () => {
         <p className=" text-4xl py-6 text-orange-600 hover:text-orange-700 mx-auto ">
           <FaHtml5 />
         </p>
-        <p className=" text-4xl py-6 text-blue-700 hover:text-blue-800 mx-auto ">
+        <p className=" text-4xl py-6 text-blue-600 hover:text-blue-800 mx-auto ">
           <FaCss3Alt />
         </p>
         <p className=" text-4xl py-6 text-yellow-500 hover:text-yellow-600 mx-auto">
           <IoLogoJavascript />
         </p>
-        <p className=" text-4xl py-6 text-green-500 hover:text-green-600 mx-auto">
+        <p className=" text-4xl py-6 text-blue-800 hover:text-blue-900 mx-auto">
           <SiTypescript />
         </p>
         <p className=" text-4xl py-6 text-blue-400 hover:text-blue-500 mx-auto">
@@ -99,12 +99,12 @@ const InfoSidebar = () => {
           </a>
         </p>
         <p className="mx-auto">
-          <a href="#" className=" text-4xl hover:text-blue-700 text-gray-400 ">
+          <a href="#" className=" text-4xl hover:text-blue-800 text-gray-400 ">
             <AiFillLinkedin />
           </a>
         </p>
         <p className="mx-auto">
-          <a href="#" className=" text-4xl hover:text-blue-700 text-gray-400 ">
+          <a href="#" className=" text-4xl hover:text-blue-800 text-gray-400 ">
             <AiFillFacebook />
           </a>
         </p>
