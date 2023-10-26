@@ -19,9 +19,9 @@ const LinksSidebar = () => {
         } duration-700 p-1.5   absolute  z-10`}
       >
         {isOpen ? (
-          <AiOutlineClose className="text-gray-600 text-4xl hover:text-white" />
+          <AiOutlineClose className="text-icon-gray text-4xl hover:text-white" />
         ) : (
-          <VscThreeBars className="text-gray-600 text-4xl hover:text-white" />
+          <VscThreeBars className="text-icon-gray text-4xl hover:text-white" />
         )}
       </button>
 
@@ -30,40 +30,44 @@ const LinksSidebar = () => {
           isOpen ? 'w-64' : 'w-32'
         } h-full bg-box-gray shadow-sm duration-700`}
       >
-        <nav className=" h-full flex flex-col bg-box-gray border-r shadow-sm ">
+        <nav className=" h-full flex flex-col bg-box-gray shadow-sm ">
           {isOpen && (
             <div className=" duration-700 bg-box-gray">
-              <div className="border-b-2 border-gray-600 mt-32">
+              <div className=" mt-32">
                 <ul className=" px-3">
-                  <li className=" text-gray-600 text-2xl my-5 mx-4 hover:text-white">
+                  <li className=" text-icon-gray text-2xl my-5 mx-4 hover:text-white">
                     <a href="#">Home</a>
                   </li>
-                  <li className=" text-gray-600 text-2xl my-5 mx-4 hover:text-white">
+                  <li className=" text-icon-gray text-2xl my-5 mx-4 hover:text-white">
                     <a href="#">Services</a>
                   </li>
-                  <li className=" text-gray-600 text-2xl my-5 mx-4 hover:text-white">
+                  <li className=" text-icon-gray text-2xl my-5 mx-4 hover:text-white">
                     <a href="#">Works</a>
                   </li>
-                  <li className=" text-gray-600 text-2xl my-5 mx-4 hover:text-white">
+                  <li className=" text-icon-gray text-2xl my-5 mx-4 hover:text-white">
                     <a href="#">Resume</a>
                   </li>
-                  <li className=" text-gray-600 text-2xl my-5 mx-4 hover:text-white">
+                  <li className=" text-icon-gray text-2xl my-5 mx-4 hover:text-white">
                     <a href="#">Blog</a>
                   </li>
-                  <li className=" text-gray-600 text-2xl my-5 mx-4 hover:text-white">
+                  <li className=" text-icon-gray text-2xl my-5 mx-4 hover:text-white">
                     <a href="#">Contact</a>
                   </li>
                 </ul>
               </div>
-              <div className="  grid  grid-cols-2  mb-7 border-b-2 border-gray-600 py-7">
+              <hr className=" mx-6 border-2 border-icon-gray opacity-30" />
+
+              <div className="  grid  grid-cols-2  py-7">
                 <button className=" text-4xl text-white mx-auto">
                   <MdLightMode />
                 </button>
-                <button className=" text-5xl text-black mx-auto">
+                <button className=" text-5xl text-white mx-auto">
                   <MdDarkMode />
                 </button>
               </div>
-              <div className="  grid grid-cols-4  border-b-2 border-gray-600 pb-4 ">
+              <hr className=" mx-6 border-2 border-icon-gray opacity-30" />
+
+              <div className=" m-6  grid grid-cols-4 ">
                 <button className=" mb-5 mx-auto w-9 h-9 bg-red-600  rounded-full"></button>
                 <button className=" mb-5 mx-auto w-9 h-9 bg-orange-600  rounded-full"></button>
                 <button className=" mb-5 mx-auto w-9 h-9 bg-yellow-400  rounded-full"></button>

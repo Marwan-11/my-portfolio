@@ -6,7 +6,7 @@ const History = () => {
       title: 'Web Development',
       disc: 'well done',
       info: 'mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm',
-      date: 'jan 2023',
+      date: 'jan 2023-feb 2023',
       link: 'order now',
     },
     {
@@ -14,7 +14,7 @@ const History = () => {
       disc: 'well done',
       info: 'mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm',
 
-      date: 'jan 2023',
+      date: 'jan 2023-feb 2023',
       link: 'order now',
     },
     {
@@ -22,7 +22,7 @@ const History = () => {
       disc: 'well done',
       info: 'mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm',
 
-      date: 'jan 2023',
+      date: 'jan 2023-feb 2023',
       link: 'order now',
     },
     {
@@ -30,7 +30,7 @@ const History = () => {
       disc: 'well done',
       info: 'mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm',
 
-      date: 'jan 2023',
+      date: 'jan 2023-feb 2023',
       link: 'order now',
     },
   ];
@@ -40,7 +40,7 @@ const History = () => {
       disc: 'well done',
       info: 'mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm',
 
-      date: 'jan 2023',
+      date: 'jan 2023-feb 2023',
       link: 'order now',
     },
     {
@@ -48,7 +48,7 @@ const History = () => {
       disc: 'well done',
       info: 'mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm',
 
-      date: 'jan 2023',
+      date: 'jan 2023-feb 2023',
       link: 'order now',
     },
     {
@@ -56,7 +56,7 @@ const History = () => {
       disc: 'well done',
       info: 'mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm',
 
-      date: 'jan 2023',
+      date: 'jan 2023-feb 2023',
       link: 'order now',
     },
     {
@@ -64,17 +64,17 @@ const History = () => {
       disc: 'well done',
       info: 'mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm',
 
-      date: 'jan 2023',
+      date: 'jan 2023-feb 2023',
       link: 'order now',
     },
   ];
 
   return (
     <div className=" flex">
-      <div className=" py-12 px-12 w-full border-r-2 border-gray-400">
+      <div className=" py-12 px-12 w-full">
         <div>
           <div>
-            <h4 className=" text-white text-4xl">Education</h4>
+            <h4 className=" text-white text-6xl">Education</h4>
           </div>
         </div>
         <div className=" grid gap-10 grid-cols-auto py-9">
@@ -85,15 +85,17 @@ const History = () => {
                   <h5 className=" font-semibold text-2xl text-white">
                     {item.title}
                   </h5>
-                  <h5 className=" font-semibold text-2xl  text-gray-500">
-                    {item.date}
-                  </h5>
+                  <div className=" p-2 bg-slate-900 px-6 rounded-3xl w-fit h-fit ">
+                    <h5 className=" font-semibold text-2xl  text-icon-gray">
+                      {item.date}
+                    </h5>
+                  </div>
                 </div>
                 <div className=" my-5 mx-7">
-                  <p className=" text-gray-500 text-xl font-normal pb-3">
+                  <p className=" text-icon-gray text-xl font-thin italic pb-3">
                     {item.disc}
                   </p>
-                  <p className=" text-gray-500 text-xl font-normal">
+                  <p className=" text-icon-gray text-xl font-normal">
                     {item.info}
                   </p>
                 </div>
@@ -113,7 +115,7 @@ const History = () => {
       <div className=" py-12 px-12 w-full">
         <div>
           <div>
-            <h4 className=" text-white text-4xl">Work History</h4>
+            <h4 className=" text-white text-6xl">Work History</h4>
           </div>
         </div>
         <div className=" grid gap-10 grid-cols-auto py-9">
@@ -124,15 +126,17 @@ const History = () => {
                   <h5 className=" font-semibold text-2xl text-white">
                     {item.title}
                   </h5>
-                  <h5 className=" font-semibold text-2xl  text-gray-500">
-                    {item.date}
-                  </h5>
+                  <div className=" p-2 bg-slate-900 px-6 rounded-3xl w-fit h-fit ">
+                    <h5 className=" font-semibold text-2xl  text-icon-gray">
+                      {item.date}
+                    </h5>
+                  </div>
                 </div>
                 <div className=" my-5 mx-7">
-                  <p className=" text-gray-500 text-xl font-normal pb-3">
+                  <p className=" text-icon-gray text-xl italic font-thin pb-3">
                     {item.disc}
                   </p>
-                  <p className=" text-gray-500 text-xl font-normal">
+                  <p className=" text-icon-gray text-xl font-normal">
                     {item.info}
                   </p>
                 </div>

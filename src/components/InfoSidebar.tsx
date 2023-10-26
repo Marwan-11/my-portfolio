@@ -1,6 +1,6 @@
 import { FaHtml5, FaCss3Alt, FaReact } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
-import { SiTypescript } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss } from 'react-icons/si';
 import { MdDone, MdEmail } from 'react-icons/md';
 import { BiSolidDownload } from 'react-icons/bi';
 import { BsThreeDotsVertical } from 'react-icons/bs';
@@ -8,7 +8,12 @@ import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai';
 import { useState } from 'react';
 
 const InfoSidebar = () => {
-  const [isOpen, setisOpen] = useState();
+  const dateNow: number = +new Date().getFullYear();
+
+  const birthDay: number = +new Date(2000, 4, 11).getFullYear();
+
+  const year = dateNow - birthDay;
+
   return (
     <div className="">
       <div className="">
@@ -20,7 +25,7 @@ const InfoSidebar = () => {
         <img
           src="../../images/me.jpg"
           alt=""
-          className=" rounded-full mx-auto w-32 "
+          className=" rounded-full mx-auto w-40 h-40 "
         />
         <p className=" py-5 text-white text-center text-2xl font-bold">
           Marwan Yahia
@@ -39,7 +44,7 @@ const InfoSidebar = () => {
         <div className=" text-right">
           <p className=" py-2  text-xl text-icon-gray">Egypt</p>
           <p className=" py-2  text-xl text-icon-gray">Qaliobia</p>
-          <p className=" py-2  text-xl text-icon-gray">23</p>
+          <p className=" py-2  text-xl text-icon-gray">{year}</p>
         </div>
       </div>
 
@@ -59,6 +64,9 @@ const InfoSidebar = () => {
           <SiTypescript />
         </p>
         <p className=" w-32 text-6xl py-6 px-6 text-blue-400 hover:text-blue-500 mx-auto">
+          <SiTailwindcss />
+        </p>
+        <p className=" w-32 text-6xl py-6 px-6 text-blue-500 hover:text-blue-600 mx-auto">
           <FaReact />
         </p>
       </div>
