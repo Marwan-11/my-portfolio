@@ -2,22 +2,18 @@ const MainView = () => {
   return (
     <div
       style={{ backgroundImage: 'url(../../images/bg.jpg)' }}
-      className=" h-[30rem] my-20 mx-auto bg-cover bg-no-repeat bg-center "
+      className=" p-[60px] mx-[15px] h-[30rem] bg-cover bg-no-repeat bg-center "
     >
-      <div className=" h-full w-full backdrop-blur-sm backdrop-grayscale-[40%]">
-        <div className=" py-7 text-center">
-          <h1 className=" text-6xl text-white m-11 font-extrabold">
-            Discover my Amazing Art Space!
-          </h1>
-        </div>
-        <div className=" py-7 text-center">
-          <p className=" text-3xl text-yellow-400">i am here where are you ?</p>
-        </div>
-        <div className=" py-7 text-left md:text-center">
-          <button className=" text-3xl text-black bg-yellow-400 m-11 p-5">
-            EXPLORE NOW
-          </button>
-        </div>
+      <div className=" pt-[30px] text-left  h-full  backdrop-blur-sm backdrop-grayscale-[40%] lg:text-center">
+        <h1 className=" text-4xl text-white mb-[15px] font-extrabold">
+          Discover my Amazing Art Space!
+        </h1>
+        <p className=" mb-[25px] text-3xl text-yellow-400">
+          i am here where are you ?
+        </p>
+        <button className=" text-xs text-black bg-yellow-400 px-[35px] h-[45px]">
+          EXPLORE NOW
+        </button>
       </div>
     </div>
   );

@@ -1,5 +1,7 @@
 import { AiFillStar } from 'react-icons/ai';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import carousel from '../Carousel';
+import { useState } from 'react';
 
 const Recommendations = () => {
   const services = [
@@ -40,37 +42,42 @@ const Recommendations = () => {
       disc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.',
     },
   ];
+
+  const [current, setCurrent] = useState(services.length - 1);
+
+  const prev = () =>
+    setCurrent((current) =>
+      current === 0 ? services.length - 1 : current - 1
+    );
+
+  const next = () =>
+    setCurrent((current) => (services.length - 1 ? 0 : current + 1));
+
   return (
-    <div className=" py-12 px-12 ">
-      <div className=" py-7 my-8">
-        <h4 className=" text-white text-6xl">Recommendations</h4>
-      </div>
-      <div className=" grid gap-11 h-full grid-cols-auto py-9 ">
+    <div className=" mt-10 px-[20px]">
+      <h4 className=" mb-[20px] font-bold text-white text-[17px]">
+        Recommendations
+      </h4>
+      <div className=" flex overflow-hidden ">
         {services.map((item) => {
           return (
-            <div className=" bg-box-gray  px-8 py-8 rounded-2xl relative min-h-full min-w-full  ">
-              <div className=" my-5 mx-7">
-                <h5 className=" font-bold text-4xl text-white">{item.title}</h5>
-              </div>
-              <div>
+            <div className=" px-[15px] min-w-fit">
+              <div className=" relative my-[15px] bg-box-gray  px-8 py-8 rounded-2xl ">
+                <h5 className=" mb-[16px] font-semibold text-[14px] text-white">
+                  {item.title}
+                </h5>
                 <img
                   src={item.img}
                   alt="img"
-                  className=" rounded-full w-28 absolute -top-14 right-4  "
+                  className=" rounded-full w-16 absolute -top-9 right-7  "
                 />
-              </div>
-              <div className=" mx-7">
-                <p className=" text-icon-gray text-xl font-thin italic ">
+                <p className=" text-icon-gray mb-[16px] text-[13px] font-thin italic ">
                   {item.job}
                 </p>
-              </div>
-              <div className=" my-5 mx-7">
-                <p className=" text-icon-gray text-xl font-normal">
+                <p className=" text-gray-500 mb-[16px] text-[13px] font-normal">
                   {item.disc}
                 </p>
-              </div>
-              <div className=" my-5 mx-7">
-                <p className=" text-yellow-400 hover:text-yellow-500 text-2xl bg-my-black rounded-3xl flex w-fit py-1">
+                <p className=" text-yellow-400 hover:text-yellow-500 text-xl bg-gray-400 rounded-3xl flex w-fit py-1">
                   <AiFillStar />
                   <AiFillStar />
                   <AiFillStar />
@@ -84,10 +91,16 @@ const Recommendations = () => {
       </div>
       <div className="text-center">
         <button>
-          <IoIosArrowBack className=" text-yellow-400 hover:text-yellow-500  text-2xl inline-block mx-2" />
+          <IoIosArrowBack
+            onClick={prev}
+            className=" text-yellow-400 hover:text-yellow-500  text-2xl inline-block mx-2"
+          />
         </button>
         <button>
-          <IoIosArrowForward className=" text-yellow-400 hover:text-yellow-500 text-2xl inline-block mx-2" />
+          <IoIosArrowForward
+            onClick={next}
+            className=" text-yellow-400 hover:text-yellow-500 text-2xl inline-block mx-2"
+          />
         </button>
       </div>
     </div>

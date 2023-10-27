@@ -35,29 +35,23 @@ const Services = () => {
   ];
 
   return (
-    <div className=" py-12 px-12 w-full">
-      <div>
-        <div>
-          <h4 className=" text-white text-4xl">My Services</h4>
-        </div>
-      </div>
-      <div className=" grid gap-10 grid-cols-auto py-9">
+    <div className=" mt-10 px-[20px]">
+      <h4 className=" mb-[20px] font-bold text-white text-[17px]">
+        My Services
+      </h4>
+      <div className=" grid grid-cols-auto ">
         {services.map((item) => {
           return (
-            <div className=" bg-box-gray overflow-hidden px-8 py-8 rounded-2xl ">
-              <div className=" my-5 mx-7">
-                <h5 className=" font-semibold text-2xl text-white">
+            <div className=" px-[15px]">
+              <div className=" my-[15px] bg-box-gray overflow-hidden px-8 py-8 rounded-2xl ">
+                <h5 className=" mb-[16px] font-semibold text-[14px] text-white">
                   {item.title}
                 </h5>
-              </div>
-              <div className=" my-5 mx-7">
-                <p className=" text-gray-500 text-xl font-normal">
+                <p className=" text-gray-500 mb-[16px] text-[13px] font-normal">
                   {item.disc}
                 </p>
-              </div>
-              <div className=" my-5 mx-7">
                 <a href="#">
-                  <p className=" text-yellow-400 inline-block  text-2xl">
+                  <p className=" text-yellow-400 inline-block  text-[12px]">
                     {item.link}
                   </p>
                   <AiOutlineArrowRight className=" text-yellow-400 inline-block" />

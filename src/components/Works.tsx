@@ -42,10 +42,10 @@ const Works = () => {
     ];
 
   return (
-    <div className=" py-12 px-12 w-full">
+    <div className=" py-12 px-12">
       <div>
         <div>
-          <h4 className=" text-white text-5xl">WORKS</h4>
+          <h4 className=" text-white text-3xl">WORKS</h4>
         </div>
       </div>
       <div className=" grid gap-10 grid-cols-auto py-9">

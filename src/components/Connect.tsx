@@ -3,53 +3,40 @@ import { MdAlternateEmail, MdEmail } from 'react-icons/md';
 
 const Connect = () => {
   return (
-    <div className=" py-8 px-8 my-8">
-      <div className=" py-12 px-12 w-full">
-        <h4 className=" text-white text-5xl">Get in touch</h4>
-      </div>
-
-      <div className=" flex flex-col bg-box-gray overflow-hidden px-14 py-4 rounded-2xl ">
-        <div className=" flex h-16 m-7 ">
-          <div className=" w-16 my-8  bg-zinc-800 h-full">
-            <BsFillPersonFill className=" text-4xl mx-auto my-3 text-icon-gray " />
-          </div>
-          <div className=" h-full my-8 flex-1">
+    <div className=" mt-10 px-[20px]">
+      <h4 className=" mb-[20px] font-bold text-white text-[17px]">
+        Get in touch
+      </h4>
+      <div className=" px-[15px]">
+        <div className=" p-[30px] mb-[30px] flex flex-col bg-box-gray overflow-hidden rounded-2xl ">
+          <div className=" flex flex-row-reverse h-14 mb-7 ">
             <input
               type="text"
               placeholder="Name"
-              className=" placeholder:text-icon-gray  focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 px-5 h-full w-full bg-slate-700 text-white text-2xl "
+              className=" peer  flex-1 placeholder:text-icon-gray  focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 px-5 h-full w-full bg-slate-700 text-white text-2xl "
             />
+            <BsFillPersonFill className=" peer-focus:text-black peer-focus:bg-yellow-500 p-[10px]  w-14  bg-zinc-800 h-full  mx-auto  text-icon-gray " />
           </div>
-        </div>
 
-        <div className=" flex h-16 m-7 ">
-          <div className=" w-16 my-8  bg-zinc-800 h-full">
-            <MdAlternateEmail className=" text-4xl mx-auto my-3 text-icon-gray " />
-          </div>
-          <div className=" my-8 flex-1 h-full">
+          <div className=" flex flex-row-reverse h-14 mb-7 ">
             <input
               type="email"
               placeholder="Email"
-              className=" placeholder:text-icon-gray focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 px-5 h-full w-full  bg-slate-700 text-white text-2xl "
+              className=" peer  flex-1 placeholder:text-icon-gray focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 px-5 h-full w-full  bg-slate-700 text-white text-2xl "
             />
+            <MdAlternateEmail className="peer-focus:text-black peer-focus:bg-yellow-500 p-[10px]  w-14   bg-zinc-800 h-full  mx-auto  text-icon-gray " />
           </div>
-        </div>
 
-        <div className=" flex h-52 m-7 ">
-          <div className=" w-16 my-8  bg-zinc-800 h-full">
-            <MdEmail className=" text-4xl mx-auto my-3 text-icon-gray " />
-          </div>
-          <div className=" my-8 flex-1 h-full">
+          <div className=" flex flex-row-reverse mb-7  ">
             <textarea
               type="text"
               placeholder="Message"
-              className="  placeholder:text-icon-gray  py-3 focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 px-5 h-full  w-full placeholder:Name bg-slate-700 text-white text-2xl "
+              className="peer  flex-1   placeholder:text-icon-gray  py-3 focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 px-5  w-full placeholder:Name bg-slate-700 text-white text-2xl "
             />
+            <MdEmail className="peer-focus:text-black peer-focus:bg-yellow-500 p-[10px]  w-14 h-full  bg-zinc-800   mx-auto  text-icon-gray " />
           </div>
-        </div>
 
-        <div className=" mx-7 mt-16 w-fit">
-          <button className=" my-5 text-black bg-yellow-400 px-12 py-6  text-xl font-bold   ">
+          <button className=" px-[35px]  mb-7 ml-7 w-fit text-black bg-yellow-400 text-xl font-bold h-[45px]">
             SEND MESSAGE
           </button>
         </div>

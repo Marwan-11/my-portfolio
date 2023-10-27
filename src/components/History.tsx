@@ -71,37 +71,31 @@ const History = () => {
 
   return (
     <div className=" flex">
-      <div className=" py-12 px-12 w-full">
-        <div>
-          <div>
-            <h4 className=" text-white text-6xl">Education</h4>
-          </div>
-        </div>
-        <div className=" grid gap-10 grid-cols-auto py-9">
+      <div className=" mt-10 px-[20px]">
+        <h4 className=" mb-[20px] font-bold text-white text-[17px]">
+          Education
+        </h4>
+        <div className=" grid grid-cols-auto ">
           {education.map((item) => {
             return (
-              <div className=" bg-box-gray overflow-hidden px-8 py-8 rounded-2xl ">
-                <div className=" my-5 mx-7 flex justify-between">
-                  <h5 className=" font-semibold text-2xl text-white">
-                    {item.title}
-                  </h5>
-                  <div className=" p-2 bg-slate-900 px-6 rounded-3xl w-fit h-fit ">
-                    <h5 className=" font-semibold text-2xl  text-icon-gray">
+              <div className=" px-[15px]">
+                <div className=" my-[15px] bg-box-gray overflow-hidden px-8 py-8 rounded-2xl ">
+                  <div className=" flex justify-between">
+                    <h5 className=" mb-[16px] font-semibold text-[14px] text-white">
+                      {item.title}
+                    </h5>
+                    <h5 className=" p-2 bg-slate-900 px-6 rounded-3xl w-fit h-fit  font-semibold  text-[12px]  text-icon-gray">
                       {item.date}
                     </h5>
                   </div>
-                </div>
-                <div className=" my-5 mx-7">
-                  <p className=" text-icon-gray text-xl font-thin italic pb-3">
+                  <p className=" text-gray-500 mb-[16px] text-[13px] font-thin italic">
                     {item.disc}
                   </p>
-                  <p className=" text-icon-gray text-xl font-normal">
+                  <p className=" text-gray-500 mb-[16px] text-[13px] font-normal">
                     {item.info}
                   </p>
-                </div>
-                <div className=" my-5 mx-7">
                   <a href="#">
-                    <p className=" text-yellow-400 inline-block  text-2xl">
+                    <p className=" text-yellow-400 inline-block  text-[12px]">
                       {item.link}
                     </p>
                     <AiOutlineArrowRight className=" text-yellow-400 inline-block" />
@@ -112,37 +106,31 @@ const History = () => {
           })}
         </div>
       </div>
-      <div className=" py-12 px-12 w-full">
-        <div>
-          <div>
-            <h4 className=" text-white text-6xl">Work History</h4>
-          </div>
-        </div>
-        <div className=" grid gap-10 grid-cols-auto py-9">
+      <div className=" mt-10 px-[20px]">
+        <h4 className=" mb-[20px] font-bold text-white text-[17px]">
+          Work History
+        </h4>
+        <div className=" grid grid-cols-auto ">
           {work.map((item) => {
             return (
-              <div className=" bg-box-gray overflow-hidden px-8 py-8 rounded-2xl ">
-                <div className=" my-5 mx-7 flex justify-between">
-                  <h5 className=" font-semibold text-2xl text-white">
-                    {item.title}
-                  </h5>
-                  <div className=" p-2 bg-slate-900 px-6 rounded-3xl w-fit h-fit ">
-                    <h5 className=" font-semibold text-2xl  text-icon-gray">
+              <div className=" px-[15px]">
+                <div className=" my-[15px] bg-box-gray overflow-hidden px-8 py-8 rounded-2xl ">
+                  <div className=" flex justify-between">
+                    <h5 className=" mb-[16px] font-semibold text-[14px] text-white">
+                      {item.title}
+                    </h5>
+                    <h5 className=" p-2 bg-slate-900 px-6 rounded-3xl w-fit h-fit  font-semibold text-[12px]  text-icon-gray">
                       {item.date}
                     </h5>
                   </div>
-                </div>
-                <div className=" my-5 mx-7">
-                  <p className=" text-icon-gray text-xl italic font-thin pb-3">
+                  <p className=" text-gray-500 mb-[16px] text-[13px] font-thin italic">
                     {item.disc}
                   </p>
-                  <p className=" text-icon-gray text-xl font-normal">
+                  <p className=" text-gray-500 mb-[16px] text-[13px] font-normal">
                     {item.info}
                   </p>
-                </div>
-                <div className=" my-5 mx-7">
                   <a href="#">
-                    <p className=" text-yellow-400 inline-block  text-2xl">
+                    <p className=" text-yellow-400 inline-block  text-[12px]">
                       {item.link}
                     </p>
                     <AiOutlineArrowRight className=" text-yellow-400 inline-block" />
