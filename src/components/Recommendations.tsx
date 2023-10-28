@@ -1,7 +1,7 @@
 import { AiFillStar } from 'react-icons/ai';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import carousel from '../Carousel';
 import { useState } from 'react';
+import carousel from '../Carousel';
 
 const Recommendations = () => {
   const services = [
@@ -58,36 +58,36 @@ const Recommendations = () => {
       <h4 className=" mb-[20px] font-bold text-white text-[17px]">
         Recommendations
       </h4>
-      <div className=" flex overflow-hidden ">
-        {services.map((item) => {
-          return (
-            <div className=" px-[15px] min-w-fit">
-              <div className=" relative my-[15px] bg-box-gray  px-8 py-8 rounded-2xl ">
-                <h5 className=" mb-[16px] font-semibold text-[14px] text-white">
-                  {item.title}
-                </h5>
-                <img
-                  src={item.img}
-                  alt="img"
-                  className=" rounded-full w-16 absolute -top-9 right-7  "
-                />
-                <p className=" text-icon-gray mb-[16px] text-[13px] font-thin italic ">
-                  {item.job}
-                </p>
-                <p className=" text-gray-500 mb-[16px] text-[13px] font-normal">
-                  {item.disc}
-                </p>
-                <p className=" text-yellow-400 hover:text-yellow-500 text-xl bg-gray-400 rounded-3xl flex w-fit py-1">
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                </p>
+      <div className="">
+          {services.map((item) => {
+            return (
+              <div className=" px-[15px] min-w-fit">
+                <div className=" relative my-[15px] bg-box-gray  px-8 py-8 rounded-2xl ">
+                  <h5 className=" mb-[16px] font-semibold text-[14px] text-white">
+                    {item.title}
+                  </h5>
+                  <img
+                    src={item.img}
+                    alt="img"
+                    className=" rounded-full w-16 absolute -top-9 right-7  "
+                  />
+                  <p className=" text-icon-gray mb-[16px] text-[13px] font-thin italic ">
+                    {item.job}
+                  </p>
+                  <p className=" text-gray-500 mb-[16px] text-[13px] font-normal">
+                    {item.disc}
+                  </p>
+                  <p className=" text-yellow-400 hover:text-yellow-500 text-xl bg-gray-400 rounded-3xl flex w-fit py-1">
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                  </p>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
       </div>
       <div className="text-center">
         <button>

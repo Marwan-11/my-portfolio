@@ -42,38 +42,30 @@ const Works = () => {
     ];
 
   return (
-    <div className=" py-12 px-12">
-      <div>
-        <div>
-          <h4 className=" text-white text-3xl">WORKS</h4>
-        </div>
-      </div>
-      <div className=" grid gap-10 grid-cols-auto py-9">
+    <div className=" mt-10 px-[20px] ">
+      <h4 className=" mb-[20px] font-bold text-white text-[17px]">WORKS</h4>
+      <div className=" flex gap-7  justify-between flex-wrap py-9 mx-[20px]">
         {services.map((item) => {
           return (
-            <div className="overflow-hidden h-96 w-full relative group">
-              <div className=" w-full">
-                <img src={`${item.img}`} alt="Project photo" className="" />
-              </div>
-              <div className=" h-48 absolute top-[-100%] duration-500  bg-box-gray  px-8 py-4 group-hover:top-[50%]">
-                <div className=" my-2 mx-7">
-                  <h5 className=" font-semibold text-2xl text-white">
-                    {item.title}
-                  </h5>
-                </div>
-                <div className=" my-2 mx-7">
-                  <p className=" text-gray-500 text-xl font-normal">
-                    {item.disc}
+            <div className="overflow-hidden relative group">
+              <img
+                src={`${item.img}`}
+                alt="Project photo"
+                className=" w-[270px] border-none duration-500 group-hover:scale-[1.1]"
+              />
+              <div className=" h-[50%] w-full absolute left-0 bottom-[-100%]  bg-box-gray px-3 py-2  group-hover:bottom-[0] duration-500">
+                <h5 className=" font-semibold text-[13px] text-white">
+                  {item.title}
+                </h5>
+                <p className=" text-gray-500 text-[13px] font-normal">
+                  {item.disc}
+                </p>
+                <a href="#" className="">
+                  <p className=" text-yellow-400 inline-block  text-[13px]">
+                    {item.link}
                   </p>
-                </div>
-                <div className=" my-2 mx-7">
-                  <a href="#">
-                    <p className=" text-yellow-400 inline-block  text-2xl">
-                      {item.link}
-                    </p>
-                    <AiOutlineArrowRight className=" text-yellow-400 inline-block" />
-                  </a>
-                </div>
+                  <AiOutlineArrowRight className=" text-yellow-400 inline-block" />
+                </a>
               </div>
             </div>
           );
