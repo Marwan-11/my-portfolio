@@ -29,7 +29,6 @@ const Connect = () => {
 
           <div className=" flex flex-row-reverse mb-7  ">
             <textarea
-              type="text"
               placeholder="Message"
               className="peer  flex-1   placeholder:text-icon-gray  py-3 focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 px-5  w-full placeholder:Name bg-slate-700 text-white text-2xl "
             />

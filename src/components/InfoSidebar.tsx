@@ -5,7 +5,6 @@ import { MdDone, MdEmail } from 'react-icons/md';
 import { BiSolidDownload } from 'react-icons/bi';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai';
-import { useState } from 'react';
 
 const InfoSidebar = () => {
   const dateNow: number = +new Date().getFullYear();
