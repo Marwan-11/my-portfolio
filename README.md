@@ -1,8 +1,6 @@
 <h1 align="center">My Portfolio</h1>
 
-
-## Description 
-<p align="center">My Portfolio was built using react, vite, typescript, and tailwind.</p>
+<p align="center">A sleek and dynamic personal portfolio website using React as the front-end library, Vite as the build tool, Tailwind CSS for responsive and stylish UI components, and TypeScript for enhanced code quality and maintainability. This portfolio website will serve as a showcase of my skills, projects, and achievements, and it will highlight my expertise in utilizing modern web development technologies. </p>
 
 
 
