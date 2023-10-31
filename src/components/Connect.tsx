@@ -3,11 +3,11 @@ import { MdAlternateEmail, MdEmail } from 'react-icons/md';
 
 const Connect = () => {
   return (
-    <div className=" mt-10 px-[20px]">
-      <h4 className=" mb-[20px] font-bold text-white text-[17px]">
+    <div className="  mt-10 lg:px-[20px]">
+      <h4 className=" mb-4 text-center lg:text-left lg:mb-[20px] font-bold text-white text-[17px]">
         Get in touch
       </h4>
-      <div className=" px-[15px]">
+      <div className=" lg:px-[15px]">
         <div className=" p-[30px] mb-[30px] flex flex-col bg-box-gray overflow-hidden rounded-2xl ">
           <div className=" flex flex-row-reverse h-14 mb-7 ">
             <input

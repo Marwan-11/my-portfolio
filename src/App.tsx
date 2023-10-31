@@ -12,10 +12,10 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className=" h-full flex ">
-      <div className="  bg-box-gray fixed  h-full w-[290px] top-0 left-0 overflow-y-scroll no-scrollbar">
+      <div className="  bg-box-gray  h-full w-[290px] top-0 left-0 overflow-y-scroll no-scrollbar hidden lg:block lg:fixed lg:visible">
         <InfoSidebar />
       </div>
-      <div className=" flex-1 overflow-hidden ml-[290px] mr-[80px]">
+      <div className=" flex-1 ml-1 mr-1 overflow-hidden w-full lg:ml-[290px] lg:mr-[80px]">
         <MainView />
         <Services />
         <Recommendations />
@@ -25,7 +25,7 @@ function App() {
         <Connect />
         <Footer />
       </div>
-      <div className="fixed h-full top-0 right-0 bg-box-gray w-[80px] ">
+      <div className="h-full top-0 right-0 bg-box-gray w-[80px] hidden lg:block lg:fixed ">
         <LinksSidebar />
       </div>
     </div>

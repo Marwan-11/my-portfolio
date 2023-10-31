@@ -1,13 +1,14 @@
 import { AiFillStar } from 'react-icons/ai';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 // import { useState } from 'react';
+import avatar1 from '../../public/images/avatar-01.png';
 
 const Recommendations = () => {
   const services = [
     {
       title: 'name',
       job: 'bvcsrxgtrbb',
-      img: '../../images/avatar-01.png',
+      img: avatar1,
       disc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.',
     },
     {
@@ -53,15 +54,15 @@ const Recommendations = () => {
   //   setCurrent((current) => (services.length - 1 ? 0 : current + 1));
 
   return (
-    <div className=" mt-10 px-[20px]">
-      <h4 className=" mb-[20px] font-bold text-white text-[17px]">
+    <div className="mt-10 lg:px-[20px]">
+      <h4 className=" text-center  lg:text-left lg:mb-[20px] font-bold text-white text-[17px]">
         Recommendations
       </h4>
       <div className="">
         {services.map((item) => {
           return (
-            <div className=" px-[15px] min-w-fit">
-              <div className=" relative my-[15px] bg-box-gray  px-8 py-8 rounded-2xl ">
+            <div className=" my-10 px-[15px] min-w-fit">
+              <div className=" relative my-[15px] bg-box-gray  px-8 py-8 rounded-lg ">
                 <h5 className=" mb-[16px] font-semibold text-[14px] text-white">
                   {item.title}
                 </h5>
@@ -90,7 +91,7 @@ const Recommendations = () => {
       </div>
       <div className="text-center">
         <button>
-          <IoIosArrowBack className=" text-yellow-400 hover:text-yellow-500  text-2xl inline-block mx-2" />
+          <IoIosArrowBack className=" text-yellow-400  hover:text-yellow-500  text-2xl inline-block mx-2" />
         </button>
         <button>
           <IoIosArrowForward className=" text-yellow-400 hover:text-yellow-500 text-2xl inline-block mx-2" />

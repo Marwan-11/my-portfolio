@@ -22,7 +22,7 @@ const InfoSidebar = () => {
       </div>
       <div className=" p-[30px] text-center bg-side-gray w-[290px] h-[235px] fixed">
         <img
-          src="../../images/me.jpg"
+          src="../../public/images/me.jpg"
           alt=""
           className=" rounded-full mx-auto w-[90px] h-[90px] mb-[10px] "
         />

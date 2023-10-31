@@ -5,10 +5,10 @@ const Footer = () => {
   const date = new Date().getFullYear();
 
   return (
-    <div className=" mx-7 px-[30px] flex justify-between  bg-box-gray overflow-hidden rounded-2xl">
-      <div className=" flex bg-box-gray ">
+    <div className=" lg:mx-7 px-[30px] lg:flex lg:justify-between  bg-box-gray overflow-hidden rounded-lg">
+      <div className=" flex bg-box-gray mt-4 ">
         <img
-          src="../../images/logo-color-5a993285.svg"
+          src="../../public/images/logo-color-5a993285.svg"
           alt="logo"
           className="  my-auto w-8"
         />
