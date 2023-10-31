@@ -1,27 +1,48 @@
-# React + TypeScript + Vite
+<h1 align="center">My Portfolio</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">A sleek and dynamic personal portfolio website using React as the front-end library, Vite as the build tool, Tailwind CSS for responsive and stylish UI components, and TypeScript for enhanced code quality and maintainability. This portfolio website will serve as a showcase of my skills, projects, and achievements, and it will highlight my expertise in utilizing modern web development technologies. </p>
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Links
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Repo](https://github.com/Marwan-11/my-portfolio.git)
 
-- Configure the top-level `parserOptions` property like this:
+- [Live](https://my-portfolio-coral-omega.vercel.app/)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Screenshots
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![]()
+
+
+## Built With
+
+
+- React
+- Vite
+- Typescript
+- 
+- Tailwind
+
+## Author
+
+**Marwan Yahia**
+
+- [Profile](https://github.com/Marwan-11 "Marwan Yahia")
+- [Email](mailto:marwanyahia151@gmail.com?subject=Hi "Hi!")
+
+
+## 🤝 Support
+
+Contributions, issues, and feature requests are welcome!
+
+Give a ⭐️ if you like this project!
+
+
+
+
+
+
+
+
+
