@@ -1,43 +1,75 @@
-import { BsFillPersonFill } from 'react-icons/bs';
-import { MdAlternateEmail, MdEmail } from 'react-icons/md';
+import { useState } from "react";
+import { BsFillPersonFill } from "react-icons/bs";
+import { MdAlternateEmail, MdEmail } from "react-icons/md";
+import SectionHeader from "./ui/SectionHeader";
 
 const Connect = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [msg, setMsg] = useState("");
+
+  const sendMail = () => {
+    fetch("https://sendmail-api-docs.vercel.app/api/send", {
+      method: "POST",
+      body: JSON.stringify({
+        to: "marwanyahia151@gmail.com",
+        from: "ovic391@gmail.com",
+        subject: name,
+        message: email + " " + msg,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+    setName("");
+    setEmail("");
+    setMsg("");
+  };
+
   return (
     <div className="  mt-10 lg:px-[20px]">
-      <h4 className=" mb-4 text-center lg:text-left lg:mb-[20px] font-bold text-white text-[17px]">
-        Get in touch
-      </h4>
+      <SectionHeader>Get in touch with me</SectionHeader>
       <div className=" lg:px-[15px]">
-        <div className=" p-[30px] mb-[30px] flex flex-col bg-box-gray overflow-hidden rounded-2xl ">
-          <div className=" flex flex-row-reverse h-14 mb-7 ">
+        <div className=" mb-[30px] flex flex-col overflow-hidden rounded-lg bg-box-gray p-[30px] ">
+          <div className=" mb-7 flex h-14 flex-row-reverse ">
             <input
               type="text"
               placeholder="Name"
-              className=" peer  flex-1 placeholder:text-icon-gray  focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 px-5 h-full w-full bg-slate-700 text-white text-2xl "
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className=" peer  h-full w-full  flex-1 bg-slate-700 px-5 text-lg text-white placeholder:text-icon-gray focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 "
             />
-            <BsFillPersonFill className=" peer-focus:text-black peer-focus:bg-yellow-500 p-[10px]  w-14  bg-zinc-800 h-full  mx-auto  text-icon-gray " />
+            <BsFillPersonFill className=" mx-auto h-full w-12 bg-zinc-800  p-3  text-sm text-icon-gray  peer-focus:bg-yellow-500  peer-focus:text-black " />
           </div>
 
-          <div className=" flex flex-row-reverse h-14 mb-7 ">
+          <div className=" mb-7 flex h-14 flex-row-reverse ">
             <input
               type="email"
               placeholder="Email"
-              className=" peer  flex-1 placeholder:text-icon-gray focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 px-5 h-full w-full  bg-slate-700 text-white text-2xl "
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className=" peer  h-full w-full flex-1 bg-slate-700 px-5 text-lg text-white placeholder:text-icon-gray focus:border-yellow-500  focus:outline-none focus:ring-1 focus:ring-yellow-500 "
             />
-            <MdAlternateEmail className="peer-focus:text-black peer-focus:bg-yellow-500 p-[10px]  w-14   bg-zinc-800 h-full  mx-auto  text-icon-gray " />
+            <MdAlternateEmail className="mx-auto h-full w-12 bg-zinc-800  p-3   text-sm text-icon-gray  peer-focus:bg-yellow-500  peer-focus:text-black " />
           </div>
 
-          <div className=" flex flex-row-reverse mb-7  ">
+          <div className=" mb-7 flex flex-row-reverse  ">
             <textarea
               placeholder="Message"
-              className="peer  flex-1   placeholder:text-icon-gray  py-3 focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 px-5  w-full placeholder:Name bg-slate-700 text-white text-2xl "
+              value={msg}
+              onChange={(e) => setMsg(e.target.value)}
+              className="placeholder:Name  min-h-40 peer  w-full flex-1 resize-none bg-slate-700 px-5 py-3 text-lg text-white  placeholder:text-icon-gray focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 "
             />
-            <MdEmail className="peer-focus:text-black peer-focus:bg-yellow-500 p-[10px]  w-14 h-full  bg-zinc-800   mx-auto  text-icon-gray " />
+            <MdEmail className="mx-auto h-40 w-12  bg-zinc-800 p-3  text-sm   text-icon-gray  peer-focus:bg-yellow-500 peer-focus:text-black" />
           </div>
 
-          <button className=" px-[35px]  mb-7 ml-7 w-fit text-black bg-yellow-400 text-xl font-bold h-[45px]">
-            SEND MESSAGE
-          </button>
+          <div className="mt-6 flex">
+            <button
+              onClick={sendMail}
+              className="mr-auto rounded bg-yellow-400 px-4 py-2 text-sm font-bold text-black"
+            >
+              SEND MESSAGE
+            </button>
+          </div>
         </div>
       </div>
     </div>

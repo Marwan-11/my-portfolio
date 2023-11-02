@@ -14,17 +14,17 @@ body {
   height: 100%;
 }
 body {
-  @apply bg-black px-8 py-4;
+  @apply bg-slate-900 px-2 py-4;
 }
 
 body::-webkit-scrollbar {
   width: 15px;
 }
 body::-webkit-scrollbar-track {
-  @apply bg-black border-none;
+  @apply border-none bg-black;
 }
 body::-webkit-scrollbar-thumb {
-  @apply bg-slate-800 border-none;
+  @apply border-none bg-slate-800;
 }
 .no-scrollbar::-webkit-scrollbar {
   width: 0px;

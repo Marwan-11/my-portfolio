@@ -1,18 +1,45 @@
+import TypeAnimation from "react-typing-sequence";
+
+const textSequence = [
+  {
+    text: [
+      {
+        content: "A developer",
+        tag: "span",
+        yoyo: true,
+      },
+      {
+        content: "a desinger",
+        tag: "span",
+        yoyo: true,
+      },
+      {
+        content: "tech enthusiast",
+        tag: "span",
+        yoyo: true,
+      },
+    ],
+    repeat: 10000,
+    repeatDelay: 1000,
+  },
+];
 const MainView = () => {
   return (
     <div
-      style={{ backgroundImage: 'url(../../images/bg.jpg)' }}
-      className=" lg:mx-[15px] h-[30rem] bg-cover bg-no-repeat bg-center rounded-lg"
+      style={{ backgroundImage: "url(../../images/bg.jpg)" }}
+      className=" h-[30rem] rounded-lg bg-cover bg-center bg-no-repeat lg:mx-4"
     >
-      <div className=" flex pt-[30px] h-full  backdrop-blur-sm backdrop-grayscale-[40%] text-center">
+      <div className=" flex h-full p-16 text-center backdrop-blur-sm backdrop-grayscale-[40%]">
         <div className=" m-auto">
-          <h1 className=" text-4xl text-white mb-[15px] font-extrabold">
-            Discover my Amazing Art Space!
+          <h1 className=" mb-4 text-5xl font-extrabold capitalize text-white">
+            discover my Amazing art space!
           </h1>
-          <p className=" mb-[25px] text-3xl text-yellow-400">
-            i am here where are you ?
+          <p className="mb-6 text-yellow-400 lg:text-3xl">
+            {`<code> `}
+            Hello I&apos;m <TypeAnimation text={textSequence} />
+            {` </code>`}
           </p>
-          <button className=" text-xs text-black bg-yellow-400 px-[35px] h-[45px]">
+          <button className="rounded-sm bg-yellow-400 px-8 py-4 text-xs text-black">
             EXPLORE NOW
           </button>
         </div>
