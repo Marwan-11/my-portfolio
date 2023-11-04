@@ -20,7 +20,7 @@ const textSequence = [
       },
     ],
     repeat: 10000,
-    repeatDelay: 1000,
+    repeatDelay: 10,
   },
 ];
 const MainView = () => {
@@ -31,15 +31,19 @@ const MainView = () => {
     >
       <div className=" flex h-full p-16 text-center backdrop-blur-sm backdrop-grayscale-[40%]">
         <div className=" m-auto">
-          <h1 className=" mb-4 text-5xl font-extrabold capitalize text-white">
+          <h1 className=" text-background mb-4 text-5xl font-extrabold capitalize">
             discover my Amazing art space!
           </h1>
-          <p className="mb-6 text-yellow-400 lg:text-3xl">
-            {`<code> `}
+          <p className=" text-background mb-6 lg:text-3xl">
+            {`<`}
+            <span className=" text-primary">code</span>
+            {`>`}
             Hello I&apos;m <TypeAnimation text={textSequence} />
-            {` </code>`}
+            {` <`}
+            <span className=" text-primary">code</span>
+            {`/>`}
           </p>
-          <button className="rounded-sm bg-yellow-400 px-8 py-4 text-xs text-black">
+          <button className="bg-primary hover:text-foreground text-muted rounded-lg px-8 py-4 text-xs font-bold">
             EXPLORE NOW
           </button>
         </div>

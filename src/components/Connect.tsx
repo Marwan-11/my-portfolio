@@ -28,17 +28,17 @@ const Connect = () => {
   return (
     <div className="  mt-10 lg:px-[20px]">
       <SectionHeader>Get in touch with me</SectionHeader>
-      <div className=" lg:px-[15px]">
-        <div className=" mb-[30px] flex flex-col overflow-hidden rounded-lg bg-box-gray p-[30px] ">
+      <div className=" border-muted-foreground rounded-lg border lg:px-[15px]">
+        <div className=" bg-box-gray mb-[30px] flex flex-col overflow-hidden rounded-lg p-[30px] ">
           <div className=" mb-7 flex h-14 flex-row-reverse ">
             <input
               type="text"
               placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className=" peer  h-full w-full  flex-1 bg-slate-700 px-5 text-lg text-white placeholder:text-icon-gray focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 "
+              className=" placeholder:text-accent  text-background focus:border-primary bg-foreground border-muted-foreground  focus:ring-primary peer h-full w-full  flex-1 rounded-r-lg border-y border-r px-5 text-lg focus:outline-none focus:ring-1 "
             />
-            <BsFillPersonFill className=" mx-auto h-full w-12 bg-zinc-800  p-3  text-sm text-icon-gray  peer-focus:bg-yellow-500  peer-focus:text-black " />
+            <BsFillPersonFill className=" border-muted-foreground bg-muted-foreground peer-focus:text-foreground peer-focus:bg-primary mx-auto h-full w-12  rounded-l-lg  border-y border-l  p-3  text-sm " />
           </div>
 
           <div className=" mb-7 flex h-14 flex-row-reverse ">
@@ -47,9 +47,9 @@ const Connect = () => {
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className=" peer  h-full w-full flex-1 bg-slate-700 px-5 text-lg text-white placeholder:text-icon-gray focus:border-yellow-500  focus:outline-none focus:ring-1 focus:ring-yellow-500 "
+              className=" placeholder:text-accent  text-background focus:border-primary bg-foreground border-muted-foreground  focus:ring-primary peer h-full w-full  flex-1 rounded-r-lg border-y border-r px-5 text-lg focus:outline-none focus:ring-1 "
             />
-            <MdAlternateEmail className="mx-auto h-full w-12 bg-zinc-800  p-3   text-sm text-icon-gray  peer-focus:bg-yellow-500  peer-focus:text-black " />
+            <MdAlternateEmail className=" border-muted-foreground bg-muted-foreground peer-focus:text-foreground peer-focus:bg-primary mx-auto h-full w-12  rounded-l-lg  border-y border-l  p-3  text-sm " />
           </div>
 
           <div className=" mb-7 flex flex-row-reverse  ">
@@ -57,15 +57,15 @@ const Connect = () => {
               placeholder="Message"
               value={msg}
               onChange={(e) => setMsg(e.target.value)}
-              className="placeholder:Name  min-h-40 peer  w-full flex-1 resize-none bg-slate-700 px-5 py-3 text-lg text-white  placeholder:text-icon-gray focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 "
+              className="placeholder:Name  min-h-40 placeholder:text-accent  bg-foreground text-background focus:border-primary focus:ring-primary border-muted-foreground peer w-full flex-1 resize-none rounded-r-lg border-y border-r  px-5 py-3 text-lg focus:outline-none focus:ring-1 "
             />
-            <MdEmail className="mx-auto h-40 w-12  bg-zinc-800 p-3  text-sm   text-icon-gray  peer-focus:bg-yellow-500 peer-focus:text-black" />
+            <MdEmail className=" border-muted-foreground peer-focus:text-foreground  peer-focus:bg-primary bg-muted-foreground mx-auto h-40  w-12 rounded-l-lg  border-y   border-l  p-3 text-sm" />
           </div>
 
           <div className="mt-6 flex">
             <button
               onClick={sendMail}
-              className="mr-auto rounded bg-yellow-400 px-4 py-2 text-sm font-bold text-black"
+              className=" bg-primary hover:text-foreground text-muted mr-auto rounded-lg px-8 py-4 text-xs font-bold"
             >
               SEND MESSAGE
             </button>

@@ -62,23 +62,23 @@ const Works = () => {
                 <img
                   src={`${item.img}`}
                   alt="Project photo"
-                  className="h-full w-full rounded-t-lg border-none object-cover duration-500 lg:rounded-lg"
+                  className="h-full w-full rounded-t-lg border-none object-cover duration-500 group-hover:scale-[1.1] lg:rounded-lg"
                 />
               </div>
-              <div className=" left-0 h-32 w-full rounded-b-lg  bg-slate-950 px-3 py-2 duration-500 lg:absolute lg:bottom-[-100%] lg:flex lg:rounded-lg lg:group-hover:bottom-[0]">
+              <div className=" bg-card-foreground left-0 h-32 w-full rounded-b-lg px-3 py-2 duration-500 lg:absolute lg:bottom-[-100%] lg:flex lg:rounded-lg lg:group-hover:bottom-[0]">
                 <div className="m-auto text-center">
                   <div className=" mb-2 flex flex-row items-center justify-center">
                     <a href={`${item.links.live}`} target="blank">
-                      <BsBoxArrowUp className=" mx-4 text-xl text-gray-400 hover:text-cyan-500" />
+                      <BsBoxArrowUp className=" text-muted-foreground hover:text-primary mx-4 text-xl" />
                     </a>
-                    <h5 className="text-lg font-semibold text-white">
+                    <h5 className="text-primary text-lg font-semibold">
                       {item.name}
                     </h5>
                     <a href={`${item.links.github}`} target="blank">
-                      <AiFillGithub className=" mx-4 text-xl text-gray-400 hover:text-cyan-500" />
+                      <AiFillGithub className=" text-muted-foreground hover:text-primary mx-4 text-xl" />
                     </a>
                   </div>
-                  <p className=" mb-2 text-left text-sm font-normal text-icon-gray lg:text-center">
+                  <p className=" text-muted mb-2 text-left text-sm font-normal lg:text-center">
                     {item.disc.slice(0, 75)}...
                   </p>
                 </div>

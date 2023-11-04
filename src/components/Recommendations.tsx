@@ -61,22 +61,22 @@ const Recommendations = () => {
         {services.map((item) => {
           return (
             <div className="my-10 min-w-fit px-4">
-              <div className="relative my-4 rounded-lg  bg-box-gray px-8 py-8 ">
-                <h5 className="mb-4 text-lg font-semibold capitalize text-white">
+              <div className=" bg-card-foreground border-muted-foreground relative  my-4 rounded-lg border  px-8 py-8 ">
+                <h5 className="text-background mb-4 text-lg font-semibold capitalize">
                   {item.title}
                 </h5>
                 <img
                   src={item.img}
                   alt="img"
-                  className="absolute -top-9 right-7 w-16 rounded-full"
+                  className="hover:border-muted absolute -top-9 right-7 w-16 rounded-full"
                 />
-                <p className="mb-4 text-sm font-thin capitalize italic text-zinc-500">
+                <p className="text-muted mb-4 text-sm font-thin capitalize italic">
                   {item.job}
                 </p>
-                <p className="mb-4 text-sm font-normal text-zinc-500">
+                <p className="text-muted-foreground mb-4 text-sm font-normal">
                   {item.disc}
                 </p>
-                <p className="flex w-fit rounded-3xl border border-slate-800 px-2 py-1 text-xl text-yellow-400 duration-300 hover:border-slate-600 hover:text-yellow-500">
+                <p className="hover:border-muted text-primary border-muted-foreground flex w-fit rounded-3xl border px-2 py-1 text-xl duration-300">
                   <AiFillStar />
                   <AiFillStar />
                   <AiFillStar />
@@ -90,10 +90,10 @@ const Recommendations = () => {
       </div>
       <div className="text-center">
         <button>
-          <IoIosArrowBack className=" mx-2  inline-block  text-2xl text-yellow-400 hover:text-yellow-500" />
+          <IoIosArrowBack className=" text-primary  hover:text-primary-foreground   mx-2 inline-block text-2xl" />
         </button>
         <button>
-          <IoIosArrowForward className=" mx-2 inline-block text-2xl text-yellow-400 hover:text-yellow-500" />
+          <IoIosArrowForward className=" text-primary hover:text-primary-foreground mx-2 inline-block text-2xl" />
         </button>
       </div>
     </div>

@@ -5,34 +5,63 @@ import LinksSidebar from "./components/LinksSidebar";
 import MainView from "./components/MainView";
 import Works from "./components/Works";
 import History from "./components/History";
-import Contact from "./components/Contact";
 import Connect from "./components/Connect";
 import Footer from "./components/Footer";
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { VscThreeBars } from "react-icons/vsc";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isInfoBarOpen, setInfoBarIsOpen] = useState(false);
+  const [isSideBarOpen, setSideBarIsOpen] = useState(false);
 
   const toggleSidebar = () => {
-    setIsOpen(!isOpen);
+    setSideBarIsOpen(!isSideBarOpen);
+  };
+
+  const toggleInfobar = () => {
+    setInfoBarIsOpen(!isInfoBarOpen);
   };
 
   return (
     <>
       <div className=" flex h-full ">
-        <div className="  no-scrollbar  left-0 top-0 hidden h-full w-[290px] overflow-y-scroll bg-box-gray lg:visible lg:fixed lg:block">
-          <InfoSidebar />
+        <div
+          className={` border-muted-foreground no-scrollbar bg-card-foreground fixed left-0 top-0 z-50 h-full overflow-y-scroll rounded-lg border-x ${
+            isInfoBarOpen ? "w-72" : "w-0 lg:w-72"
+          }`}
+        >
+          <InfoSidebar isInfoBarOpen={isInfoBarOpen} />
         </div>
-        <div className=" ml-1 mr-1 w-full flex-1 overflow-hidden lg:ml-[290px] lg:mr-[80px]">
-          <div className="mb-2 flex h-20 w-full bg-red-200">
-            <button onClick={toggleSidebar} className={"ms-auto"}>
-              {!isOpen && (
-                <VscThreeBars className="text-2xl text-icon-gray hover:text-white" />
+        <div className=" ml-1 mr-1 w-full flex-1 overflow-hidden lg:ml-72 lg:mr-20">
+          <div className="bg-accent-foreground  z-30 mb-2 flex h-20 w-full rounded-t-lg ">
+            <button
+              onClick={toggleSidebar}
+              className={`fixed top-11 z-50 ms-auto lg:top-8 ${
+                isSideBarOpen ? "right-48" : "right-8"
+              }`}
+            >
+              {isSideBarOpen ? (
+                <AiOutlineClose className="text-muted-foreground hover:text-muted text-2xl" />
+              ) : (
+                <VscThreeBars className="text-muted-foreground hover:text-muted text-2xl " />
+              )}
+            </button>
+            <button
+              onClick={toggleInfobar}
+              className={`fixed top-11 z-50 ms-auto lg:top-8 lg:hidden ${
+                isInfoBarOpen ? "left-60" : "left-8"
+              }`}
+            >
+              {isInfoBarOpen ? (
+                <AiOutlineClose className="text-muted-foreground hover:text-muted text-2xl " />
+              ) : (
+                <BsThreeDotsVertical className="text-muted-foreground hover:text-muted text-2xl " />
               )}
             </button>
           </div>
+
           <MainView />
           {/* Hero */}
           <Services />
@@ -48,11 +77,14 @@ function App() {
           <Footer />
         </div>
         <div
-          className={`fixed right-0 top-0 h-full bg-box-gray ${
-            isOpen ? "w-[320px]" : "w-[80px]"
+          className={`bg-box-gray fixed right-0 top-0 h-full ${
+            isSideBarOpen ? "w-60" : "w-0 lg:w-20"
           }`}
         >
-          <LinksSidebar toggleSidebar={toggleSidebar} isOpen={isOpen} />
+          <LinksSidebar
+            toggleSidebar={toggleSidebar}
+            isSideBarOpen={isSideBarOpen}
+          />
           {/* NavigationSideBar */}
         </div>
       </div>
