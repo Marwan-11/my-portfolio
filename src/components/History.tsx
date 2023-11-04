@@ -1,5 +1,3 @@
-import { AiOutlineArrowRight } from "react-icons/ai";
-import SectionHeader from "./ui/SectionHeader";
 import Hestory from "./Hestroy";
 
 const History = () => {
