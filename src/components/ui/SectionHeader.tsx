@@ -1,8 +1,11 @@
-const SectionHeader = ({ children, classes }: any) => {
+const SectionHeader = ({
+  children,
+  classes,
+}: React.PropsWithChildren & { classes?: string }) => {
   return (
     <h4
       className={
-        "text-background text-center text-3xl font-bold capitalize lg:mb-5 " +
+        "text-center text-3xl font-bold capitalize text-background lg:mb-5 " +
         classes
       }
     >

@@ -9,32 +9,33 @@ const textSequence = [
         yoyo: true,
       },
       {
-        content: "a desinger",
+        content: "A designer",
         tag: "span",
         yoyo: true,
       },
       {
-        content: "tech enthusiast",
+        content: "Tech enthusiast",
         tag: "span",
         yoyo: true,
       },
     ],
     repeat: 10000,
-    repeatDelay: 10,
+    repeatDelay: 1,
   },
 ];
-const MainView = () => {
+const Hero = () => {
   return (
     <div
-      style={{ backgroundImage: "url(../../images/bg.jpg)" }}
+      id="home"
+      style={{ backgroundImage: "url(../../images/code.jpg)" }}
       className=" h-[30rem] rounded-lg bg-cover bg-center bg-no-repeat lg:mx-4"
     >
       <div className=" flex h-full p-16 text-center backdrop-blur-sm backdrop-grayscale-[40%]">
         <div className=" m-auto">
-          <h1 className=" text-background mb-4 text-5xl font-extrabold capitalize">
+          <h1 className=" mb-4 text-5xl font-extrabold capitalize text-white ">
             discover my Amazing art space!
           </h1>
-          <p className=" text-background mb-6 lg:text-3xl">
+          <p className=" mb-6 text-white lg:text-3xl">
             {`<`}
             <span className=" text-primary">code</span>
             {`>`}
@@ -43,12 +44,14 @@ const MainView = () => {
             <span className=" text-primary">code</span>
             {`/>`}
           </p>
-          <button className="bg-primary hover:text-foreground text-muted rounded-lg px-8 py-4 text-xs font-bold">
-            EXPLORE NOW
-          </button>
+          <a href="#Projects">
+            <button className="rounded-lg bg-primary px-8 py-4 text-xs font-bold text-muted hover:text-foreground">
+              EXPLORE NOW
+            </button>
+          </a>
         </div>
       </div>
     </div>
   );
 };
-export default MainView;
+export default Hero;

@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -63,7 +64,7 @@ body {
 
 @layer base {
   body {
-    @apply bg-foreground px-2 py-4;
+    @apply bg-foreground;
   }
 
   body::-webkit-scrollbar {
@@ -73,7 +74,7 @@ body {
     @apply border-none bg-black;
   }
   body::-webkit-scrollbar-thumb {
-    @apply bg-primary border-none;
+    @apply border-none bg-primary;
   }
   .no-scrollbar::-webkit-scrollbar {
     width: 0px;

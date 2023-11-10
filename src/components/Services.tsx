@@ -1,57 +1,25 @@
 import { AiOutlineArrowRight } from "react-icons/ai";
 import SectionHeader from "./ui/SectionHeader";
+import { ServicesData } from "@/lib/const";
 
-const Services = () => {
-  const services = [
-    {
-      title: "Web Development",
-      disc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
-      link: "order now",
-    },
-    {
-      title: "UI/UX Design",
-      disc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
-      link: "order now",
-    },
-    {
-      title: "Sound Design",
-      disc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
-      link: "order now",
-    },
-    {
-      title: "Game Design",
-      disc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
-      link: "order now",
-    },
-    {
-      title: "Game Design",
-      disc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
-      link: "order now",
-    },
-    {
-      title: "Game Design",
-      disc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.",
-      link: "order now",
-    },
-  ];
-
+const ServicesSection = () => {
   return (
-    <div className="my-20 lg:px-5">
+    <div className="my-20 lg:px-5" id="services">
       <SectionHeader>My Services</SectionHeader>
       <div className="  flex flex-wrap justify-between gap-4 lg:flex-row lg:py-9">
-        {services.map((item) => {
+        {ServicesData.map((item) => {
           return (
-            <div className=" min-w-[300px] flex-1 px-4">
-              <div className=" bg-card-foreground border-muted-foreground my-4  overflow-hidden rounded-lg border p-8 shadow-sm ">
-                <h5 className="text-card mb-4 font-semibold">{item.title}</h5>
-                <p className=" text-muted-foreground mb-4 text-sm font-normal">
+            <div className=" min-w-[300px] flex-1 px-4 ">
+              <div className=" my-4 overflow-hidden rounded-lg  border border-muted-foreground bg-card-foreground p-8 shadow-sm shadow-secondary ">
+                <h5 className="mb-4 font-semibold text-card">{item.title}</h5>
+                <p className=" mb-4 text-sm font-normal text-muted-foreground">
                   {item.disc}
                 </p>
                 <a href={item.link} className="group ms-2">
-                  <p className="text-primary inline-block text-sm capitalize">
+                  <p className="inline-block text-sm capitalize text-primary">
                     order now
                   </p>
-                  <AiOutlineArrowRight className="text-primary ms-1 inline-block duration-500 group-hover:ms-3" />
+                  <AiOutlineArrowRight className="ms-1 inline-block text-primary duration-500 group-hover:ms-3" />
                 </a>
               </div>
             </div>
@@ -61,4 +29,4 @@ const Services = () => {
     </div>
   );
 };
-export default Services;
+export default ServicesSection;
