@@ -1,5 +1,5 @@
 import { MdOutlineCopyright, MdEmail } from "react-icons/md";
-import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
   const date = new Date().getFullYear();

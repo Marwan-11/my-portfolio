@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { BsThreeDotsVertical } from "react-icons/bs";
 import {
   Hero,
   Footer,
