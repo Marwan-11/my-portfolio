@@ -16,7 +16,7 @@ const Header = ({
   toggleInfobar,
 }: HeaderProps) => {
   return (
-    <div className=" z-30 mb-2 flex h-20 w-full bg-accent-foreground">
+    <div id="home" className=" z-30 mb-2 flex h-20 w-full bg-accent-foreground">
       <button
         onClick={toggleSidebar}
         className={`fixed top-7 z-50 ms-auto lg:top-8 ${

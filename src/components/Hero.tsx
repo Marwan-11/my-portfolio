@@ -26,7 +26,6 @@ const textSequence = [
 const Hero = () => {
   return (
     <div
-      id="home"
       style={{ backgroundImage: "url(../../images/code.jpg)" }}
       className=" h-[30rem] rounded-lg bg-cover bg-center bg-no-repeat lg:mx-4"
     >

@@ -21,11 +21,15 @@ const HistoryCard = ({ cardData }: { cardData: EducationDataType }) => {
         <p className=" mb-4 w-full text-sm font-normal text-muted-foreground">
           {item.info}
         </p>
-        <a href="#" className="group ms-2">
-          <p className=" inline-block text-sm capitalize text-primary">
-            {item.link}
-          </p>
-          <AiOutlineArrowRight className=" ms-1 inline-block text-primary duration-500 group-hover:ms-3" />
+        <a href={item.link} className="group ms-2">
+          {`${item.linkDisc}` && (
+            <div>
+              <p className=" inline-block text-sm capitalize text-primary">
+                {item.linkDisc}
+              </p>
+              <AiOutlineArrowRight className=" ms-1 inline-block text-primary duration-500 group-hover:ms-3" />
+            </div>
+          )}
         </a>
       </div>
     </div>

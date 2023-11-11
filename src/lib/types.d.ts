@@ -6,5 +6,6 @@ type EducationDataType = {
     start: Date;
     end: Date;
   };
+  linkDisc: string;
   link: string;
 };
