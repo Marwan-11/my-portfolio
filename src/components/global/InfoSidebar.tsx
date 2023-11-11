@@ -48,6 +48,21 @@ const InfoSidebar = ({ isInfoBarOpen }: InfoSidebarProps) => {
           </div>
         </div>
         <hr className=" border-1  mx-[20px] border-muted opacity-30" />
+        <div className=" group my-[10px] px-[10px]">
+          <a
+            title="CV"
+            href="../../../public/Marwan_Yahia_Frontend_Develober.pdf"
+            className=" px-[10px] "
+            download
+          >
+            <button className="text-[13px] text-muted-foreground group-hover:text-background ">
+              DOWNLOAD CV
+              <BiSolidDownload className=" mx-2 inline text-xl text-primary duration-300 group-hover:mt-1" />
+            </button>
+          </a>
+        </div>
+        <hr className=" border-1  mx-[20px] border-muted opacity-30" />
+
         <div className=" mx-auto flex flex-wrap  py-[10px]">
           <p className=" w-18 mx-auto  px-6 py-6 text-3xl text-orange-600 hover:text-orange-700 ">
             <FaHtml5 />
@@ -68,7 +83,9 @@ const InfoSidebar = ({ isInfoBarOpen }: InfoSidebarProps) => {
             <FaReact />
           </p>
         </div>
+
         <hr className=" border-1  mx-[20px] border-muted opacity-30" />
+
         <div className="mb-[10px] px-[10px] py-[15px]">
           <p className=" flex px-[10px] text-[13px] text-background">
             <MdDone className=" mr-3 text-xl text-primary" />
@@ -90,15 +107,6 @@ const InfoSidebar = ({ isInfoBarOpen }: InfoSidebarProps) => {
             <MdDone className=" mr-3 text-xl text-primary" />
             GIT knowledge
           </p>
-        </div>
-        <hr className=" border-1  mx-[20px] border-muted opacity-30" />
-        <div className=" group my-[10px] px-[10px]">
-          <a title="" href="#" className=" px-[10px] " download>
-            <button className="text-[13px] text-muted-foreground group-hover:text-background ">
-              DOWNLOAD CV
-              <BiSolidDownload className=" mx-1 inline text-xl text-primary duration-300 group-hover:mt-1" />
-            </button>
-          </a>
         </div>
       </div>
       <div className=" h-14 w-full  px-4" />

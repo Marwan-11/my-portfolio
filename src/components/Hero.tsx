@@ -21,7 +21,7 @@ const Hero = () => {
                   strings: [
                     " A Developer.",
                     " A Designer.",
-                    " Tech Enthusiast.",
+                    "A Tech Enthusiast.",
                   ],
                   autoStart: true,
                   loop: true,
