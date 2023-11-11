@@ -1,28 +1,5 @@
-import TypeAnimation from "react-typing-sequence";
+import Typewriter from "typewriter-effect";
 
-const textSequence = [
-  {
-    text: [
-      {
-        content: "A developer",
-        tag: "span",
-        yoyo: true,
-      },
-      {
-        content: "A designer",
-        tag: "span",
-        yoyo: true,
-      },
-      {
-        content: "Tech enthusiast",
-        tag: "span",
-        yoyo: true,
-      },
-    ],
-    repeat: 10000,
-    repeatDelay: 1,
-  },
-];
 const Hero = () => {
   return (
     <div
@@ -37,8 +14,21 @@ const Hero = () => {
           <p className=" mb-6 text-white lg:text-3xl">
             {`<`}
             <span className=" text-primary">code</span>
-            {`>`}
-            Hello I&apos;m <TypeAnimation text={textSequence} />
+            {`>`}Hello I&apos;m
+            <span>
+              <Typewriter
+                options={{
+                  strings: [
+                    " A Developer.",
+                    " A Designer.",
+                    " Tech Enthusiast.",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 50,
+                }}
+              />
+            </span>
             {` <`}
             <span className=" text-primary">code</span>
             {`/>`}

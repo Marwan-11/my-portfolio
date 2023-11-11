@@ -20,6 +20,7 @@ export const EducationData = [
       end: new Date(2023, 2),
     },
     linkDisc: "",
+    link: "",
   },
   {
     title: "Html & Css",

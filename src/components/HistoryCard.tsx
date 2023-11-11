@@ -10,7 +10,7 @@ const HistoryCard = ({ cardData }: { cardData: EducationDataType }) => {
           <h5 className=" mb-4 text-lg font-semibold text-background">
             {item.title}
           </h5>
-          <p className=" h-fit w-fit rounded-xl bg-primary  px-4 py-2 text-center text-xs font-semibold capitalize text-muted">
+          <p className=" h-fit w-fit rounded-xl bg-primary  px-4 py-2 text-center text-xs font-semibold capitalize text-muted hover:text-foreground">
             <span className="break-keep">{formatDate(item.date.start)}</span>-
             <span className="break-keep">{formatDate(item.date.end)}</span>
           </p>
