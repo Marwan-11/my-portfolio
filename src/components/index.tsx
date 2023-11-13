@@ -1,5 +1,4 @@
 export { default as Footer } from "./global/Footer";
-export { default as Header } from "./global/Header";
 export { default as InfoSidebar } from "./global/InfoSidebar";
 export { default as NavigationSideBar } from "./global/NavigationSideBar";
 export { default as Hero } from "./Hero";

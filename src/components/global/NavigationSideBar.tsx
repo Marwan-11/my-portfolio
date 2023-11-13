@@ -1,4 +1,4 @@
-import { useSidebars } from "@/context/useSideBars";
+import { useSidebars } from "@/context/useSidebars";
 import { ModeToggle } from "./mode-toggle";
 import { AiOutlineClose } from "react-icons/ai";
 import { VscThreeBars } from "react-icons/vsc";

@@ -4,7 +4,7 @@ import { SiTypescript, SiTailwindcss } from "react-icons/si";
 import { MdDone, MdEmail } from "react-icons/md";
 import { BiSolidDownload } from "react-icons/bi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineClose } from "react-icons/ai";
-import { useSidebars } from "@/context/useSideBars";
+import { useSidebars } from "../../context/useSidebars";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
 const InfoSidebar = () => {

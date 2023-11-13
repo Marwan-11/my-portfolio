@@ -9,7 +9,7 @@ import {
   ContactForm,
 } from "./components";
 import BackToTop from "./components/BackToTop";
-import { useSidebars } from "./context/useSideBars";
+import { useSidebars } from "./context/useSidebars";
 
 function App() {
   const { isInfoBarOpen, isSideBarOpen } = useSidebars();

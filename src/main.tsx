@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 import { ThemeProvider } from "@/context/theme-provider.tsx";
-import { SidebarProvider } from "@/context/useSideBars.tsx";
+import { SidebarProvider } from "@/context/useSidebars.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
