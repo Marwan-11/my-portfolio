@@ -24,7 +24,7 @@ function App() {
       </div>
       <div className=" w-full flex-1 overflow-hidden lg:ml-72 lg:mr-20">
         <div className=" fixed z-20 mb-2 flex h-20 w-full bg-accent-foreground" />
-        <div className="mb-2 flex h-20 w-full" />
+        <div id="home" className="mb-2 flex h-20 w-full" />
         <Hero />
         <Services />
         <Projects />
