@@ -1,12 +1,25 @@
+import { useSidebars } from "@/context/useSideBars";
 import { ModeToggle } from "./mode-toggle";
+import { AiOutlineClose } from "react-icons/ai";
+import { VscThreeBars } from "react-icons/vsc";
 
-interface NavigationSideBarProps {
-  isSideBarOpen: boolean;
-}
+const NavigationSideBar = () => {
+  const { isSideBarOpen, toggleSidebar } = useSidebars();
 
-const NavigationSideBar = ({ isSideBarOpen }: NavigationSideBarProps) => {
   return (
     <aside className="flex h-full flex-col justify-start bg-card-foreground">
+      <button
+        onClick={toggleSidebar}
+        className={`fixed top-7 z-[500] ms-auto lg:top-8 ${
+          isSideBarOpen ? "right-48" : "right-8"
+        }`}
+      >
+        {isSideBarOpen ? (
+          <AiOutlineClose className="text-2xl text-muted-foreground hover:text-muted" />
+        ) : (
+          <VscThreeBars className="text-2xl text-muted-foreground hover:text-muted " />
+        )}
+      </button>
       {isSideBarOpen && (
         <div>
           <nav className=" flex h-full flex-col bg-card-foreground shadow-sm ">

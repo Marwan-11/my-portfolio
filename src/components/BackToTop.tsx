@@ -23,6 +23,7 @@ const BackToTop = () => {
     <div>
       {toTop && (
         <button
+          title="back to top"
           onClick={scrollUp}
           className="fixed bottom-10 right-6 text-2xl text-primary hover:bottom-12 lg:right-20 "
         >

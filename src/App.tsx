@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   Hero,
   Footer,
@@ -8,24 +7,12 @@ import {
   InfoSidebar,
   NavigationSideBar,
   ContactForm,
-  Header,
 } from "./components";
 import BackToTop from "./components/BackToTop";
+import { useSidebars } from "./context/useSideBars";
 
 function App() {
-  const [isInfoBarOpen, setInfoBarIsOpen] = useState(false);
-  const [isSideBarOpen, setSideBarIsOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setSideBarIsOpen((o) => !o);
-    setInfoBarIsOpen(false);
-  };
-
-  const toggleInfobar = () => {
-    setInfoBarIsOpen((o) => !o);
-    setSideBarIsOpen(false);
-  };
-
+  const { isInfoBarOpen, isSideBarOpen } = useSidebars();
   return (
     <div className=" flex h-full ">
       <div
@@ -33,29 +20,24 @@ function App() {
           isInfoBarOpen ? "w-72" : "w-0 lg:w-72"
         }`}
       >
-        <InfoSidebar isInfoBarOpen={isInfoBarOpen} />
+        <InfoSidebar />
       </div>
       <div className=" w-full flex-1 overflow-hidden lg:ml-72 lg:mr-20">
-        <Header
-          isInfoBarOpen={isInfoBarOpen}
-          isSideBarOpen={isSideBarOpen}
-          toggleSidebar={toggleSidebar}
-          toggleInfobar={toggleInfobar}
-        />
+        <div className=" fixed z-20 mb-2 flex h-20 w-full bg-accent-foreground" />
+        <div className="mb-2 flex h-20 w-full" />
         <Hero />
         <Services />
-
         <Projects />
         <Experience />
         <ContactForm />
         <Footer />
       </div>
       <div
-        className={`bg-box-gray fixed right-0 top-0 z-20 h-full ${
+        className={`bg-box-gray fixed right-0 top-0 z-20 h-full shadow-xl ${
           isSideBarOpen ? "w-60" : "w-0 lg:w-20"
         }`}
       >
-        <NavigationSideBar isSideBarOpen={isSideBarOpen} />
+        <NavigationSideBar />
       </div>
       <BackToTop />
     </div>

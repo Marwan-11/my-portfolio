@@ -14,22 +14,16 @@ const Hero = () => {
           <p className=" mb-6 text-white lg:text-3xl">
             {`<`}
             <span className=" text-primary">code</span>
-            {`>`}Hello I&apos;m
-            <span>
-              <Typewriter
-                options={{
-                  strings: [
-                    " A Developer.",
-                    " A Designer.",
-                    "A Tech Enthusiast.",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  deleteSpeed: 50,
-                }}
-              />
-            </span>
-            {` <`}
+            {`>`}Hello I&apos;m{" "}
+            <Typewriter
+              options={{
+                strings: ["A Developer.", "A Designer.", "A Tech Enthusiast."],
+                autoStart: true,
+                loop: true,
+                deleteSpeed: 50,
+              }}
+            />
+            {`<`}
             <span className=" text-primary">code</span>
             {`/>`}
           </p>

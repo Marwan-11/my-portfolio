@@ -80,3 +80,7 @@ body {
     width: 0px;
   }
 }
+
+.Typewriter {
+  display: inline !important;
+}

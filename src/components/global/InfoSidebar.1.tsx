@@ -3,27 +3,14 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiTypescript, SiTailwindcss } from "react-icons/si";
 import { MdDone, MdEmail } from "react-icons/md";
 import { BiSolidDownload } from "react-icons/bi";
-import { AiFillGithub, AiFillLinkedin, AiOutlineClose } from "react-icons/ai";
-import { useSidebars } from "@/context/useSideBars";
-import { BsThreeDotsVertical } from "react-icons/bs";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { getMyAge } from "./InfoSidebar";
 
-const InfoSidebar = () => {
-  const { isInfoBarOpen, toggleInfobar } = useSidebars();
+export const InfoSidebar = () => {
+  const { isInfoBarOpen } = useSidebars();
 
   return (
     <div className="relative">
-      <button
-        onClick={toggleInfobar}
-        className={`fixed top-7 z-[500] ms-auto lg:top-8 lg:hidden ${
-          isInfoBarOpen ? "left-60" : "left-8"
-        }`}
-      >
-        {isInfoBarOpen ? (
-          <AiOutlineClose className="text-2xl text-muted-foreground hover:text-muted " />
-        ) : (
-          <BsThreeDotsVertical className="text-2xl text-muted-foreground hover:text-muted " />
-        )}
-      </button>
       <div
         className={`fixed left-0 h-60 w-72 rounded-t  bg-accent-foreground px-4  text-center text-background  ${
           isInfoBarOpen ? "flex" : "hidden lg:flex"
@@ -64,11 +51,13 @@ const InfoSidebar = () => {
           <a
             title="CV"
             href="../../../public/Marwan_Yahia_Frontend_Develober.pdf"
-            className=" block w-full px-[10px] text-sm text-muted-foreground group-hover:text-background"
+            className=" px-[10px] "
             download
           >
-            DOWNLOAD CV
-            <BiSolidDownload className=" mx-2 inline text-xl text-primary duration-300 group-hover:mt-1" />
+            <button className="text-[13px] text-muted-foreground group-hover:text-background ">
+              DOWNLOAD CV
+              <BiSolidDownload className=" mx-2 inline text-xl text-primary duration-300 group-hover:mt-1" />
+            </button>
           </a>
         </div>
         <hr className=" border-1  mx-[20px] border-muted opacity-30" />
@@ -97,23 +86,23 @@ const InfoSidebar = () => {
         <hr className=" border-1  mx-[20px] border-muted opacity-30" />
 
         <div className="mb-[10px] px-[10px] py-[15px]">
-          <p className=" flex break-keep px-[10px] text-[13px] text-background">
+          <p className=" flex px-[10px] text-[13px] text-background">
             <MdDone className=" mr-3 text-xl text-primary" />
             Html, Css
           </p>
-          <p className=" flex break-keep px-[10px] text-[13px] text-background">
+          <p className=" flex px-[10px] text-[13px] text-background">
             <MdDone className=" mr-3 text-xl text-primary" />
             Tailwind Css
           </p>
-          <p className="flex break-keep px-[10px] text-[13px] text-background">
+          <p className="flex px-[10px] text-[13px] text-background">
             <MdDone className=" mr-3 text-xl text-primary" />
             Javascript, Typescript
           </p>
-          <p className="flex break-keep px-[10px] text-[13px] text-background">
+          <p className="flex px-[10px] text-[13px] text-background">
             <MdDone className=" mr-3 text-xl text-primary" />
             React.JS
           </p>
-          <p className="flex break-keep px-[10px] text-[13px] text-background">
+          <p className="flex px-[10px] text-[13px] text-background">
             <MdDone className=" mr-3 text-xl text-primary" />
             GIT knowledge
           </p>
@@ -141,13 +130,4 @@ const InfoSidebar = () => {
       </div>
     </div>
   );
-};
-export default InfoSidebar;
-
-const getMyAge = () => {
-  const dateNow = +new Date().getFullYear();
-
-  const birthDay = +new Date(2000, 4, 11).getFullYear();
-
-  return dateNow - birthDay;
 };

@@ -11,7 +11,7 @@ const Projects = () => {
         {ProjectsData.map((item) => {
           return (
             <div className="group min-w-[325px] flex-1  lg:relative lg:overflow-hidden">
-              <div className="h-72">
+              <div className="h-72 overflow-hidden">
                 <img
                   src={`${item.img}`}
                   alt="Project photo"
