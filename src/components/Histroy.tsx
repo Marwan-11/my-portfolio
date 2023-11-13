@@ -10,7 +10,7 @@ const History = ({
   ids: string;
 }) => {
   return (
-    <div className="mr-4 mt-10 lg:mr-0 lg:w-[50%] lg:px-[20px]" id={ids}>
+    <div className="mr-4 mt-10 lg:mr-0 lg:w-[50%] lg:px-4" id={ids}>
       <SectionHeader>{name}</SectionHeader>
       <div className=" flex flex-col justify-between lg:py-9">
         {data.map((item) => {

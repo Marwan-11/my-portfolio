@@ -8,10 +8,10 @@ export function ModeToggle() {
   return (
     <>
       <Button size="icon" onClick={() => setTheme("dark")}>
-        <Sun className="h-[1.2rem] w-[1.2rem] transition-all " />
+        <Sun className=" h-5 w-5 transition-all " />
       </Button>
       <Button size="icon" onClick={() => setTheme("light")}>
-        <Moon className="absolute h-[1.2rem] w-[1.2rem] transition-all" />
+        <Moon className="absolute h-5 w-5 transition-all" />
       </Button>
     </>
   );

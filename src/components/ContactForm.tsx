@@ -13,7 +13,6 @@ const ContactForm = () => {
       method: "POST",
       body: JSON.stringify({
         to: "marwanyahia151@gmail.com",
-        from: "ovic391@gmail.com",
         subject: name,
         message: email + " " + msg,
       }),
@@ -26,10 +25,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div id="contact" className="  mt-10 lg:px-[20px]">
+    <div id="contact" className="mt-10 lg:px-8">
       <SectionHeader>Get in touch with me</SectionHeader>
-      <div className=" mt-7   rounded-lg border border-muted-foreground shadow-sm shadow-secondary lg:px-[15px]">
-        <div className=" bg-box-gray mb-[30px] flex flex-col overflow-hidden rounded-lg p-[30px]">
+      <div className=" mt-7 rounded-lg border border-muted-foreground shadow-sm shadow-secondary lg:px-3">
+        <div className=" bg-box-gray mb-7 flex flex-col overflow-hidden rounded-lg p-7">
           <div className=" mb-7 flex h-14 flex-row-reverse ">
             <input
               type="text"

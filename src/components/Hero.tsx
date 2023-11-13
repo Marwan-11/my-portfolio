@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div
       style={{ backgroundImage: "url(../../images/code.jpg)" }}
-      className=" h-[30rem] rounded-lg bg-cover bg-center bg-no-repeat lg:mx-4"
+      className=" h-[30rem] rounded-lg bg-cover bg-center bg-no-repeat lg:mx-9"
     >
       <div className=" flex h-full p-16 text-center backdrop-blur-sm backdrop-grayscale-[40%]">
         <div className=" m-auto">
@@ -23,9 +23,9 @@ const Hero = () => {
                 deleteSpeed: 50,
               }}
             />
-            {`<`}
+            {`</`}
             <span className=" text-primary">code</span>
-            {`/>`}
+            {`>`}
           </p>
           <a href="#Projects">
             <button className="rounded-lg bg-primary px-8 py-4 text-xs font-bold text-muted hover:text-foreground">

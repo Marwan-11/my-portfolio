@@ -33,47 +33,45 @@ const InfoSidebar = () => {
           <img
             src="/images/me.jpg"
             alt=""
-            className=" mx-auto mb-[10px] h-[90px] w-[90px] rounded-full "
+            className=" mx-auto mb-4 h-24 w-24 rounded-full "
           />
-          <p className=" mb[10px] text-md text-center font-bold text-background hover:text-primary">
+          <p className=" text-md text-center font-bold text-background hover:text-primary">
             Marwan Yahia
           </p>
-          <p className=" py-2 text-center text-[13px] text-accent">
+          <p className=" py-2 text-center text-sm text-accent">
             Front-end Developer
           </p>
         </div>
       </div>
       <div className=" h-60 w-full px-4" />
       <div className=" px-3">
-        <div className=" flex justify-between px-[10px] py-[15px] ">
-          <div className="px-[10px]">
-            <p className=" py-2  text-[13px] text-background">Residence :</p>
-            <p className=" py-2  text-[13px] text-background">City :</p>
-            <p className=" py-2  text-[13px] text-background">Age :</p>
+        <div className=" flex justify-between py-5 ">
+          <div className="px-3">
+            <p className=" py-2 text-sm text-background">Residence :</p>
+            <p className=" py-2  text-sm text-background">City :</p>
+            <p className=" py-2  text-sm text-background">Age :</p>
           </div>
-          <div className=" px-[10px] text-right">
-            <p className=" py-2  text-[13px] text-muted-foreground">Egypt</p>
-            <p className=" py-2 text-[13px] text-muted-foreground">Qaliobia</p>
-            <p className=" py-2  text-[13px] text-muted-foreground">
-              {getMyAge()}
-            </p>
+          <div className=" px-3 text-right">
+            <p className=" py-2  text-sm text-muted-foreground">Egypt</p>
+            <p className=" py-2 text-sm text-muted-foreground">Qaliobia</p>
+            <p className=" py-2  text-sm text-muted-foreground">{getMyAge()}</p>
           </div>
         </div>
-        <hr className=" border-1  mx-[20px] border-muted opacity-30" />
-        <div className=" group my-[10px] px-[10px]">
+        <hr className=" border-1  mx-3 border-muted opacity-30" />
+        <div className=" group mx-3 my-3">
           <a
             title="CV"
             href="../../../public/Marwan_Yahia_Frontend_Develober.pdf"
-            className=" block w-full px-[10px] text-sm text-muted-foreground group-hover:text-background"
+            className=" block w-full  text-sm text-muted-foreground group-hover:text-background"
             download
           >
             DOWNLOAD CV
             <BiSolidDownload className=" mx-2 inline text-xl text-primary duration-300 group-hover:mt-1" />
           </a>
         </div>
-        <hr className=" border-1  mx-[20px] border-muted opacity-30" />
+        <hr className=" border-1  mx-3 border-muted opacity-30" />
 
-        <div className=" mx-auto flex flex-wrap  py-[10px]">
+        <div className=" mx-auto flex flex-wrap">
           <p className=" w-18 mx-auto  px-6 py-6 text-3xl text-orange-600 hover:text-orange-700 ">
             <FaHtml5 />
           </p>
@@ -94,26 +92,26 @@ const InfoSidebar = () => {
           </p>
         </div>
 
-        <hr className=" border-1  mx-[20px] border-muted opacity-30" />
+        <hr className=" border-1  mx-3 border-muted opacity-30" />
 
-        <div className="mb-[10px] px-[10px] py-[15px]">
-          <p className=" flex break-keep px-[10px] text-[13px] text-background">
+        <div className="mx-3 py-4">
+          <p className=" flex break-keep  text-sm text-background">
             <MdDone className=" mr-3 text-xl text-primary" />
             Html, Css
           </p>
-          <p className=" flex break-keep px-[10px] text-[13px] text-background">
+          <p className=" flex break-keep text-sm text-background">
             <MdDone className=" mr-3 text-xl text-primary" />
             Tailwind Css
           </p>
-          <p className="flex break-keep px-[10px] text-[13px] text-background">
+          <p className="flex break-keep text-sm text-background">
             <MdDone className=" mr-3 text-xl text-primary" />
             Javascript, Typescript
           </p>
-          <p className="flex break-keep px-[10px] text-[13px] text-background">
+          <p className="flex break-keep text-sm text-background">
             <MdDone className=" mr-3 text-xl text-primary" />
             React.JS
           </p>
-          <p className="flex break-keep px-[10px] text-[13px] text-background">
+          <p className="flex break-keep text-sm text-background">
             <MdDone className=" mr-3 text-xl text-primary" />
             GIT knowledge
           </p>
