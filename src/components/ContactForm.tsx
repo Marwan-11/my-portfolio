@@ -25,10 +25,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div id="contact" className="mt-10 lg:px-8">
+    <div id="contact" className=" mx-1 mt-10 lg:mx-8">
       <SectionHeader>Get in touch with me</SectionHeader>
       <div className=" mt-7 rounded-lg border border-muted-foreground shadow-sm shadow-secondary lg:px-3">
-        <div className=" bg-box-gray mb-7 flex flex-col overflow-hidden rounded-lg p-7">
+        <div className=" bg-box-gray flex flex-col overflow-hidden rounded-lg p-7">
           <div className=" mb-7 flex h-14 flex-row-reverse ">
             <input
               type="text"
@@ -51,7 +51,7 @@ const ContactForm = () => {
             <MdAlternateEmail className=" mx-auto h-full w-12 rounded-l-lg border-y border-l border-muted-foreground  bg-muted-foreground  p-3 text-sm  peer-focus:border-primary  peer-focus:bg-primary peer-focus:text-foreground peer-focus:outline-none peer-focus:ring-1 peer-focus:ring-primary " />
           </div>
 
-          <div className=" mb-7 flex flex-row-reverse  ">
+          <div className="mb-3 flex flex-row-reverse  ">
             <textarea
               placeholder="Message"
               value={msg}

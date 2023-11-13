@@ -5,7 +5,7 @@ const Footer = () => {
   const date = new Date().getFullYear();
 
   return (
-    <footer className=" mx-8 my-4 flex justify-center rounded-lg  border border-muted-foreground bg-foreground px-3 py-2 shadow-sm shadow-secondary lg:items-center lg:justify-between">
+    <footer className=" mx-1 my-4 flex justify-center rounded-lg border  border-muted-foreground bg-foreground px-3 py-2 shadow-sm shadow-secondary lg:mx-8 lg:items-center lg:justify-between">
       <div className="flex items-center justify-center">
         <img
           src="/images/logo-color-5a993285.svg"

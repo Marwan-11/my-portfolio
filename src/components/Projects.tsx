@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div id="Projects" className="  mt-10 lg:px-4 ">
       <SectionHeader>Projects</SectionHeader>
-      <div className=" flex flex-wrap justify-between gap-7 py-9 lg:mx-5">
+      <div className=" mx-1 flex flex-wrap justify-between gap-7 py-9 lg:mx-5">
         {ProjectsData.map((item) => {
           return (
             <div className="group min-w-[325px] flex-1  lg:relative lg:overflow-hidden">
