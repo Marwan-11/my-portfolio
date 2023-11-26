@@ -1,16 +1,5 @@
 export const EducationData = [
   {
-    title: "Suez University",
-    disc: "Student",
-    info: "Bachelor's Degree in Refining and Petrochemicals.",
-    date: {
-      start: new Date(2018, 8),
-      end: new Date(2023, 6),
-    },
-    linkDisc: "Certificate",
-    link: "https://drive.google.com/file/d/13W0IL56lQ0KM6Pj_FXLi_iJKJXE-uADt/view?usp=sharing",
-  },
-  {
     title: "Programming Fundamentals",
     disc: "Self learning",
     info: "",
@@ -57,6 +46,17 @@ export const EducationData = [
     },
     linkDisc: "Projects",
     link: "#Projects",
+  },
+  {
+    title: "Suez University",
+    disc: "Student",
+    info: "Bachelor's Degree in Refining and Petrochemicals.",
+    date: {
+      start: new Date(2018, 8),
+      end: new Date(2023, 6),
+    },
+    linkDisc: "Certificate",
+    link: "https://drive.google.com/file/d/13W0IL56lQ0KM6Pj_FXLi_iJKJXE-uADt/view?usp=sharing",
   },
 ];
 export const WorkData = [

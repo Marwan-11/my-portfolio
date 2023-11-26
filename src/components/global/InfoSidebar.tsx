@@ -61,7 +61,7 @@ const InfoSidebar = () => {
         <div className=" group mx-3 my-3">
           <a
             title="CV"
-            href="../../../public/Marwan_Yahia_Frontend_Develober.pdf"
+            href="../../../public/Frontend Developer Marwan Yahia.pdf"
             className=" block w-full  text-sm text-muted-foreground group-hover:text-background"
             download
           >

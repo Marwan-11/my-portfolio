@@ -5,7 +5,7 @@ import { ProjectsData } from "@/lib/const";
 
 const Projects = () => {
   return (
-    <div id="Projects" className="  mt-10 lg:px-4 ">
+    <div id="Projects" className="lg:px-4 ">
       <SectionHeader>Projects</SectionHeader>
       <div className=" mx-1 flex flex-wrap justify-between gap-7 py-9 lg:mx-5">
         {ProjectsData.map((item) => {
