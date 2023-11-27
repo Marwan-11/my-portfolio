@@ -1,4 +1,5 @@
 import Typewriter from "typewriter-effect";
+import { scrollToSection } from "../components/global/NavigationSideBar";
 
 const Hero = () => {
   return (
@@ -28,11 +29,13 @@ const Hero = () => {
             <span className=" text-primary">code</span>
             {`>`}
           </p>
-          <a href="#Projects">
-            <button className="rounded-lg bg-primary px-8 py-4 text-xs font-bold text-muted hover:text-foreground">
-              EXPLORE NOW
-            </button>
-          </a>
+
+          <button
+            onClick={() => scrollToSection("Projects")}
+            className="rounded-lg bg-primary px-8 py-4 text-xs font-bold text-muted hover:text-foreground"
+          >
+            EXPLORE NOW
+          </button>
         </div>
       </div>
     </div>

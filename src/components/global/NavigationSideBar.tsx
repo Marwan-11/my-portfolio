@@ -3,21 +3,21 @@ import { ModeToggle } from "./mode-toggle";
 import { AiOutlineClose } from "react-icons/ai";
 import { VscThreeBars } from "react-icons/vsc";
 
+export const scrollToSection = (sectionId: string) => {
+  const section: number | undefined =
+    document.getElementById(sectionId)?.offsetTop;
+
+  if (section) {
+    let position = section - 80;
+    window.scrollTo({
+      top: position,
+      behavior: "smooth",
+    });
+  }
+};
+
 const NavigationSideBar = () => {
   const { isSideBarOpen, toggleSidebar } = useSidebars();
-
-  const scrollToSection = (sectionId: string) => {
-    const section: number | undefined =
-      document.getElementById(sectionId)?.offsetTop;
-
-    if (section) {
-      let position = section - 80;
-      window.scrollTo({
-        top: position,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <aside className="flex h-full flex-col justify-start bg-card-foreground">
