@@ -6,6 +6,19 @@ import { VscThreeBars } from "react-icons/vsc";
 const NavigationSideBar = () => {
   const { isSideBarOpen, toggleSidebar } = useSidebars();
 
+  const scrollToSection = (sectionId: string) => {
+    const section: number | undefined =
+      document.getElementById(sectionId)?.offsetTop;
+
+    if (section) {
+      let position = section - 80;
+      window.scrollTo({
+        top: position,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <aside className="flex h-full flex-col justify-start bg-card-foreground">
       <button
@@ -26,23 +39,41 @@ const NavigationSideBar = () => {
             <div className=" bg-box-gray duration-700">
               <div className=" mt-24">
                 <ul className="">
-                  <li className=" px-7  py-2 text-sm text-muted-foreground hover:text-background">
-                    <a href="#home">Home</a>
+                  <li
+                    onClick={() => scrollToSection("home")}
+                    className=" cursor-pointer  px-7  py-2 text-sm text-muted-foreground hover:text-background"
+                  >
+                    Home
                   </li>
-                  <li className="px-7  py-2 text-sm text-muted-foreground hover:text-background">
-                    <a href="#services">Services</a>
+                  <li
+                    onClick={() => scrollToSection("services")}
+                    className=" cursor-pointer  px-7  py-2 text-sm text-muted-foreground hover:text-background"
+                  >
+                    Services
                   </li>
-                  <li className=" px-7  py-2 text-sm text-muted-foreground hover:text-background">
-                    <a href="#Projects">Projects</a>
+                  <li
+                    onClick={() => scrollToSection("Projects")}
+                    className=" cursor-pointer  px-7 py-2 text-sm text-muted-foreground hover:text-background"
+                  >
+                    Projects
                   </li>
-                  <li className="px-7  py-2 text-sm text-muted-foreground hover:text-background">
-                    <a href="#education">Education</a>
+                  <li
+                    onClick={() => scrollToSection("education")}
+                    className=" cursor-pointer  px-7  py-2 text-sm text-muted-foreground hover:text-background"
+                  >
+                    Education
                   </li>
-                  <li className="px-7  py-2 text-sm text-muted-foreground hover:text-background">
-                    <a href="#work">Work</a>
+                  <li
+                    onClick={() => scrollToSection("work")}
+                    className=" cursor-pointer  px-7  py-2 text-sm text-muted-foreground hover:text-background"
+                  >
+                    Work
                   </li>
-                  <li className="px-7 py-2 text-sm text-muted-foreground hover:text-background">
-                    <a href="#contact">Contact</a>
+                  <li
+                    onClick={() => scrollToSection("contact")}
+                    className="cursor-pointer  px-7  py-2 text-sm text-muted-foreground hover:text-background"
+                  >
+                    Contact
                   </li>
                 </ul>
               </div>

@@ -23,8 +23,8 @@ function App() {
         <InfoSidebar />
       </div>
       <div className=" w-full flex-1 overflow-hidden lg:ml-72 lg:mr-20">
-        <div className=" fixed z-20 mb-2 flex h-20 w-full bg-accent-foreground" />
-        <div id="home" className="mb-2 flex h-20 w-full" />
+        <div className=" fixed z-20  flex h-20 w-full bg-accent-foreground" />
+        <div className=" flex h-20 w-full" />
         <Hero />
         <Services />
         <Projects />

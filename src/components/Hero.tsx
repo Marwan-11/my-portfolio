@@ -4,7 +4,8 @@ const Hero = () => {
   return (
     <div
       style={{ backgroundImage: "url(../../images/code.jpg)" }}
-      className=" h-[30rem] rounded-lg bg-cover bg-center bg-no-repeat lg:mx-9"
+      className="h-[30rem] rounded-lg bg-cover bg-center bg-no-repeat lg:mx-9"
+      id="home"
     >
       <div className=" flex h-full p-16 text-center backdrop-blur-sm backdrop-grayscale-[40%]">
         <div className=" m-auto">
