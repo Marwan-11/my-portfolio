@@ -20,12 +20,12 @@ const BackToTop = () => {
     });
   };
   return (
-    <div>
+    <div className="fixed bottom-10 right-6 hover:bottom-12 lg:right-20 ">
       {toTop && (
         <button
           title="back to top"
           onClick={scrollUp}
-          className="fixed bottom-10 right-6 text-2xl text-primary hover:bottom-12 lg:right-20 "
+          className=" text-2xl text-primary "
         >
           <BsFillArrowUpCircleFill />
         </button>

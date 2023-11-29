@@ -78,15 +78,36 @@ export const WorkData = [
     info: "",
 
     date: {
-      start: new Date(2023, 10),
+      start: new Date(2023, 9),
       end: new Date(2023, 10),
     },
     linkDisc: "",
     link: "#",
   },
+  {
+    title: "M Store",
+    disc: "Commerce Application",
+    info: "",
+
+    date: {
+      start: new Date(2023, 10),
+      end: new Date(2023, 10),
+    },
+    linkDisc: "Live",
+    link: "https://maro-store.vercel.app/",
+  },
 ];
 
 export const ProjectsData = [
+  {
+    name: "M Store",
+    disc: "A Store application using React, Vite, Redux, and Daisy ui Tailwind CSS for responsive and stylish UI components. This app is a commerce web page that has a Responsive Design, smooth navigation,Cart Management, Checkout Process, and Search Functionality.",
+    img: "https://github.com/Marwan-11/Maro-Store/blob/main/store.png?raw=true",
+    links: {
+      github: "https://github.com/Marwan-11/Maro-Store.git",
+      live: "https://maro-store.vercel.app/",
+    },
+  },
   {
     name: "React To-Do List",
     disc: "A To-Do List application using React, Vite, and Tailwind CSS for responsive and stylish UI components. This To-Do List app offers a way for users to manage their tasks.",
