@@ -63,10 +63,10 @@ const InfoSidebar = () => {
             title="CV"
             href="../../../public/Frontend Developer Marwan Yahia.pdf"
             className=" block w-full  text-sm text-muted-foreground group-hover:text-background"
-            download
+            target="_blank"
           >
             DOWNLOAD CV
-            <BiSolidDownload className=" mx-2 inline text-xl text-primary duration-300 group-hover:mt-1" />
+            <BiSolidDownload className=" mx-2 inline text-xl text-primary duration-300 group-hover:scale-[1.3]" />
           </a>
         </div>
         <hr className=" border-1  mx-3 border-muted opacity-30" />
